@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beatbar Apps - Omega1119</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 22px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+        }
+
+        .app-card h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #2d3748;
+        }
+
+        .app-card p {
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-size: 1.05em;
+        }
+
+        .app-store-button {
+            display: inline-block;
+            background: #000;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .app-store-button:hover {
+            background: #333;
+        }
+
+        .app-store-button::before {
+            content: " ";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            vertical-align: middle;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            opacity: 0.8;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .feature-tag {
+            background: #edf2f7;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            color: #4a5568;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .apps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎵 Beatbar Apps</h1>
+            <p>Premium music and beat-making applications for iOS</p>
+        </header>
+
+        <div class="apps-grid">
+            <!-- App 1 -->
+            <div class="app-card">
+                <div class="app-icon">🎹</div>
+                <h2>Beatbar Pro</h2>
+                <p>Create professional beats on the go with our intuitive beat-making studio. Perfect for producers and musicians of all levels.</p>
+                <div class="features">
+                    <span class="feature-tag">Studio Quality</span>
+                    <span class="feature-tag">100+ Instruments</span>
+                    <span class="feature-tag">Export to DAW</span>
+                </div>
+                <a href="#" class="app-store-button">Download on App Store</a>
+            </div>
+
+            <!-- App 2 -->
+            <div class="app-card">
+                <div class="app-icon">🎧</div>
+                <h2>Beatbar Lite</h2>
+                <p>Start your music production journey with our free, feature-rich beat maker. Learn the basics and create amazing tracks.</p>
+                <div class="features">
+                    <span class="feature-tag">Free</span>
+                    <span class="feature-tag">Easy to Use</span>
+                    <span class="feature-tag">Cloud Sync</span>
+                </div>
+                <a href="#" class="app-store-button">Download on App Store</a>
+            </div>
+
+            <!-- App 3 - Add more apps as needed -->
+            <div class="app-card">
+                <div class="app-icon">🎼</div>
+                <h2>Beatbar Studio</h2>
+                <p>The ultimate mobile music production suite with advanced features, unlimited tracks, and professional mixing tools.</p>
+                <div class="features">
+                    <span class="feature-tag">Unlimited Tracks</span>
+                    <span class="feature-tag">VST Support</span>
+                    <span class="feature-tag">Collaboration</span>
+                </div>
+                <a href="#" class="app-store-button">Download on App Store</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Omega1119. All rights reserved.</p>
+            <p>Made with ❤️ for music creators everywhere</p>
+        </footer>
+    </div>
+</body>
+</html>
