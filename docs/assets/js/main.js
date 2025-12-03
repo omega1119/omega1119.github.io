@@ -5,8 +5,21 @@
   const navToggle = document.querySelector('.nav-toggle');
   const yearEl = document.getElementById('year');
 
-  // Language support
-  let currentLang = localStorage.getItem('language') || navigator.language.split('-')[0] || 'en';
+  // Language support: detect from URL path first, then stored, then browser
+  function detectLangFromPath() {
+    const p = window.location.pathname.toLowerCase();
+    if (p.startsWith('/pl/') || p === '/pl/' || p.includes('/pl/privacy') || p.includes('/pl/terms')) return 'pl';
+    if (p.startsWith('/ptpt/') || p === '/ptpt/' || p.includes('/ptpt/privacy') || p.includes('/ptpt/terms')) return 'ptpt';
+    if (p.startsWith('/ptbr/') || p === '/ptbr/' || p.includes('/ptbr/privacy') || p.includes('/ptbr/terms')) return 'ptbr';
+    if (p.startsWith('/es/')) return 'es';
+    if (p.startsWith('/de/')) return 'de';
+    if (p.startsWith('/fr/')) return 'fr';
+    if (p.startsWith('/ja/')) return 'ja';
+    if (p.startsWith('/ko/')) return 'ko';
+    return null;
+  }
+
+  let currentLang = detectLangFromPath() || localStorage.getItem('language') || (navigator.language && navigator.language.split('-')[0]) || 'en';
   if (!translations[currentLang]) currentLang = 'en';
 
   function translate(key) {

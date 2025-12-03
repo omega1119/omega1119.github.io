@@ -1,6 +1,9 @@
 // Translations for GITC website
 const translations = {
   en: {
+      // BeatBar extra details
+      'beatbar.macos.feature6': 'Minimal, distraction-free UI',
+      'beatbar.macos.feature7': 'Built on modular Swift Packages (BeatCore, BeatInput, BeatUI, BeatFeatures, BeatMacKit)',
     // Header
     'nav.products': 'Products',
     'nav.about': 'About',
@@ -89,6 +92,9 @@ const translations = {
   },
   
   pl: {
+      // Extra details
+      'beatbar.macos.feature6': 'Minimalistyczny, nieprzeszkadzający interfejs',
+      'beatbar.macos.feature7': 'Zbudowane na modułowych pakietach Swift (BeatCore, BeatInput, BeatUI, BeatFeatures, BeatMacKit)',
     // Header
     'nav.products': 'Produkty',
     'nav.about': 'O nas',
@@ -177,6 +183,9 @@ const translations = {
   },
   
   ptpt: {
+      // Extra details
+      'beatbar.macos.feature6': 'Interface minimalista e sem distrações',
+      'beatbar.macos.feature7': 'Construído em pacotes Swift modulares (BeatCore, BeatInput, BeatUI, BeatFeatures, BeatMacKit)',
     // Header
     'nav.products': 'Produtos',
     'nav.about': 'Sobre',
@@ -265,6 +274,9 @@ const translations = {
   },
   
   ptbr: {
+      // Extra details
+      'beatbar.macos.feature6': 'Interface minimalista e sem distrações',
+      'beatbar.macos.feature7': 'Construído em pacotes Swift modulares (BeatCore, BeatInput, BeatUI, BeatFeatures, BeatMacKit)',
     // Header
     'nav.products': 'Produtos',
     'nav.about': 'Sobre',
