@@ -82,14 +82,14 @@
     
     // Update iOS App Store badges
     document.querySelectorAll('img[data-badge="ios"]').forEach(img => {
-      const basePath = `${pathPrefix}assets/images/Download_on_App_Store`;
-      img.src = `${basePath}/${folder}/Black_lockup/SVG/Download_on_the_App_Store_Badge_${folder === 'US' ? 'US-UK' : folder}_RGB_blk_${getBadgeDate(folder, 'ios')}.svg`;
+      const basePath = `${pathPrefix}assets/images/Download-on-the-App-Store`;
+      img.src = `${basePath}/${folder}/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_${folder === 'US' ? 'US-UK' : folder}_RGB_blk_${getBadgeDate(folder, 'ios')}.svg`;
     });
     
     // Update macOS App Store badges
     document.querySelectorAll('img[data-badge="macos"]').forEach(img => {
-      const basePath = `${pathPrefix}assets/images/Download_on_Mac_App_Store`;
-      img.src = `${basePath}/${folder}/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_${folder === 'US' ? 'US-UK' : folder}_RGB_blk_${getBadgeDate(folder, 'macos')}.svg`;
+      const basePath = `${pathPrefix}assets/images/Download-on-the-Mac-App-Store`;
+      img.src = `${basePath}/${folder}/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_${folder === 'US' ? 'US-UK' : folder}_RGB_blk_${getBadgeDate(folder, 'macos')}.svg`;
     });
   }
   
@@ -103,8 +103,8 @@
         'FR': '100517',
         'JP': '100317',
         'KR': '100317',
-        'PL': '092917',
-        'PTPT': '092917',
+        'PL': '100317',
+        'PTPT': '100317',
         'PTBR': '092917'
       },
       macos: {
@@ -114,9 +114,9 @@
         'FR': '100217',
         'JP': '100317',
         'KR': '100317',
-        'PL': '092917',
-        'PTPT': '092917',
-        'PTBR': '092917'
+        'PL': '100317',
+        'PTPT': '100317',
+        'PTBR': '100317'
       }
     };
     return dates[type]?.[folder] || '092917';

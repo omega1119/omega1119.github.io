@@ -40,6 +40,9 @@ const translations = {
     'beatbar.ios.feature2': 'Note↔frequency calculator (A4-tuning aware)',
     'beatbar.ios.feature3': 'Transpose and speed helpers',
     'beatbar.ios.feature4': 'Quick access widgets',
+    'beatbar.ios.feature5': 'Clean, mobile-first design',
+    'beatbar.ios.feature6': 'Backed by the same Swift packages as the macOS app',
+    'beatbarpocket.detail.closing': 'Whether you\'re practicing, teaching, or performing, BeatBar Pocket is your go-to timing toolkit.',
     'beatbar.ios.learn': 'Learn More',
     
     // BeatLab macOS
@@ -50,7 +53,10 @@ const translations = {
     'beatlab.macos.feature2': 'Key and interval overlap analysis',
     'beatlab.macos.feature3': 'Mode pivot and chord density tools',
     'beatlab.macos.feature4': 'MIDI-driven detection and timing math',
+    'beatlab.macos.feature5': 'Modular, extensible architecture',
+    'beatlab.macos.feature6': 'Designed for deep musical exploration',
     'beatlab.macos.learn': 'Learn More',
+      'beatlabmac.detail.closing': 'BeatLab is perfect for composers, theorists, and anyone seeking new harmonic ideas.',
     
     // BeatLab iOS
     'beatlab.ios.title': 'BeatLab iOS (iOS)',
@@ -60,6 +66,7 @@ const translations = {
     'beatlab.ios.feature2': 'Notes-in-key and scale chord tools',
     'beatlab.ios.feature3': 'Key/chord overlap and mode pivot analysis',
     'beatlab.ios.feature4': 'Touch-friendly, intuitive interface',
+    'beatlab.ios.feature5': 'Powered by BeatCore and reusable SwiftUI components',
     'beatlab.ios.learn': 'Learn More',
     
     // Highlight
@@ -90,6 +97,7 @@ const translations = {
     'beatlabmac.detail.description': 'BeatLab for macOS is a creative theory lab for exploring scales, chords, and musical relationships. Discover progressions and experiment with harmonic ideas using a flexible analysis engine.',
     'beatlabios.detail.title': 'BeatLab for iOS',
     'beatlabios.detail.description': 'BeatLab for iOS brings music theory exploration to your fingertips. Find scales, build chords, and analyze keys with a touch-friendly interface.',
+    'beatlabios.detail.closing': 'Ideal for students, teachers, and musicians who want to explore theory on the go.',
   },
   
   pl: {
@@ -132,6 +140,9 @@ const translations = {
     'beatbar.ios.feature2': 'Kalkulator nuta↔częstotliwość (A4)',
     'beatbar.ios.feature3': 'Pomocniki transpozycji i prędkości',
     'beatbar.ios.feature4': 'Widżety szybkiego dostępu',
+    'beatbar.ios.feature5': 'Czysty design zoptymalizowany pod urządzenia mobilne',
+    'beatbar.ios.feature6': 'Oparte na tych samych pakietach Swift co aplikacja macOS',
+    'beatbarpocket.detail.closing': 'Czy ćwiczysz, uczysz, czy występujesz, BeatBar Pocket to Twój niezbędny zestaw narzędzi czasu.',
     'beatbar.ios.learn': 'Dowiedz się więcej',
     
     // BeatLab macOS
@@ -142,7 +153,10 @@ const translations = {
     'beatlab.macos.feature2': 'Analiza nakładania tonacji i interwałów',
     'beatlab.macos.feature3': 'Narzędzia pivot trybów i gęstości akordów',
     'beatlab.macos.feature4': 'Wykrywanie oparte na MIDI i matematyka czasu',
+    'beatlab.macos.feature5': 'Modularna, rozszerzalna architektura',
+    'beatlab.macos.feature6': 'Zaprojektowany do dogłębnej eksploracji muzycznej',
     'beatlab.macos.learn': 'Dowiedz się więcej',
+      'beatlabmac.detail.closing': 'BeatLab jest idealny dla kompozytorów, teoretyków i każdego, kto szuka nowych pomysłów harmonicznych.',
     
     // BeatLab iOS
     'beatlab.ios.title': 'BeatLab iOS (iOS)',
@@ -152,6 +166,7 @@ const translations = {
     'beatlab.ios.feature2': 'Nuty w tonacji i akordy skali',
     'beatlab.ios.feature3': 'Analiza nakładania tonacji/akordów i pivot trybów',
     'beatlab.ios.feature4': 'Intuicyjny interfejs dotykowy',
+    'beatlab.ios.feature5': 'Zasilane przez BeatCore i wielokrotnego użytku komponenty SwiftUI',
     'beatlab.ios.learn': 'Dowiedz się więcej',
     
     // Highlight
@@ -181,7 +196,8 @@ const translations = {
     'beatlabmac.detail.title': 'BeatLab dla macOS',
     'beatlabmac.detail.description': 'BeatLab dla macOS to kreatywne laboratorium teorii muzyki do eksploracji skal i akordów.',
     'beatlabios.detail.title': 'BeatLab dla iOS',
-    'beatlabios.detail.description': 'BeatLab dla iOS ułatwia eksplorację teorii muzyki z interfejsem przyjaznym dotykowi.'
+    'beatlabios.detail.description': 'BeatLab dla iOS ułatwia eksplorację teorii muzyki z interfejsem przyjaznym dotykowi.',
+    'beatlabios.detail.closing': 'Idealne dla studentów, nauczycieli i muzyków, którzy chcą zgłębiać teorię w drodze.'
   },
   
   ptpt: {
@@ -224,6 +240,9 @@ const translations = {
     'beatbar.ios.feature2': 'Calculadora nota↔frequência (ajuste A4)',
     'beatbar.ios.feature3': 'Auxiliares de transposição e velocidade',
     'beatbar.ios.feature4': 'Widgets de acesso rápido',
+    'beatbar.ios.feature5': 'Design limpo e otimizado para móvel',
+    'beatbar.ios.feature6': 'Baseado nos mesmos pacotes Swift da app macOS',
+    'beatbarpocket.detail.closing': 'Quer esteja a praticar, ensinar ou atuar, BeatBar Pocket é o seu kit de ferramentas de temporização essencial.',
     'beatbar.ios.learn': 'Saiba Mais',
     
     // BeatLab macOS
@@ -234,7 +253,10 @@ const translations = {
     'beatlab.macos.feature2': 'Análise de sobreposição de tonalidades e intervalos',
     'beatlab.macos.feature3': 'Ferramentas de pivô de modos e densidade de acordes',
     'beatlab.macos.feature4': 'Deteção com MIDI e matemática de temporização',
+    'beatlab.macos.feature5': 'Arquitetura modular e extensível',
+    'beatlab.macos.feature6': 'Projetado para exploração musical profunda',
     'beatlab.macos.learn': 'Saiba Mais',
+      'beatlabmac.detail.closing': 'BeatLab é perfeito para compositores, teóricos e qualquer pessoa que procure novas ideias harmónicas.',
     
     // BeatLab iOS
     'beatlab.ios.title': 'BeatLab iOS (iOS)',
@@ -244,6 +266,7 @@ const translations = {
     'beatlab.ios.feature2': 'Notas na tonalidade e ferramentas de acordes da escala',
     'beatlab.ios.feature3': 'Análise de sobreposição de tonalidades/acordes e pivô de modos',
     'beatlab.ios.feature4': 'Interface intuitiva e amigável ao toque',
+    'beatlab.ios.feature5': 'Arquitetura modular e extensível',
     'beatlab.ios.learn': 'Saiba Mais',
     
     // Highlight
@@ -274,6 +297,8 @@ const translations = {
     'beatlabmac.detail.description': 'BeatLab para macOS é um laboratório criativo de teoria musical.',
     'beatlabios.detail.title': 'BeatLab para iOS',
     'beatlabios.detail.description': 'BeatLab para iOS facilita a exploração da teoria musical.'
+    ,
+    'beatlabios.detail.closing': 'Ideal para estudantes, professores e músicos que querem explorar teoria em mobilidade.'
   },
   
   ptbr: {
@@ -316,6 +341,9 @@ const translations = {
     'beatbar.ios.feature2': 'Calculadora nota↔frequência (afinação A4)',
     'beatbar.ios.feature3': 'Auxiliares de transposição e velocidade',
     'beatbar.ios.feature4': 'Widgets de acesso rápido',
+    'beatbar.ios.feature5': 'Design limpo e otimizado para celular',
+    'beatbar.ios.feature6': 'Baseado nos mesmos pacotes Swift do app macOS',
+    'beatbarpocket.detail.closing': 'Seja você praticando, ensinando ou se apresentando, BeatBar Pocket é seu kit de ferramentas de tempo essencial.',
     'beatbar.ios.learn': 'Saiba Mais',
     
     // BeatLab macOS
@@ -326,7 +354,10 @@ const translations = {
     'beatlab.macos.feature2': 'Análise de sobreposição de tonalidades e intervalos',
     'beatlab.macos.feature3': 'Ferramentas de pivô de modos e densidade de acordes',
     'beatlab.macos.feature4': 'Detecção baseada em MIDI e matemática de temporização',
+    'beatlab.macos.feature5': 'Arquitetura modular e extensível',
+    'beatlab.macos.feature6': 'Projetado para exploração musical profunda',
     'beatlab.macos.learn': 'Saiba Mais',
+      'beatlabmac.detail.closing': 'BeatLab é perfeito para compositores, teóricos e qualquer pessoa que procura novas ideias harmônicas.',
     
     // BeatLab iOS
     'beatlab.ios.title': 'BeatLab iOS (iOS)',
@@ -336,6 +367,7 @@ const translations = {
     'beatlab.ios.feature2': 'Notas na tonalidade e ferramentas de acordes da escala',
     'beatlab.ios.feature3': 'Análise de sobreposição de tonalidades/acordes e pivô de modos',
     'beatlab.ios.feature4': 'Interface intuitiva e amigável ao toque',
+    'beatlab.ios.feature5': 'Arquitetura modular e extensível',
     'beatlab.ios.learn': 'Saiba Mais',
     
     // Highlight
@@ -366,6 +398,8 @@ const translations = {
     'beatlabmac.detail.description': 'BeatLab para macOS é um laboratório criativo de teoria musical.',
     'beatlabios.detail.title': 'BeatLab para iOS',
     'beatlabios.detail.description': 'BeatLab para iOS facilita a exploração da teoria musical.'
+    ,
+    'beatlabios.detail.closing': 'Ideal para estudantes, professores e músicos que querem explorar teoria em movimento.'
   },
   
   // Fallback for generic Portuguese locale detection (maps to Brazilian Portuguese)
@@ -468,8 +502,11 @@ const translations = {
     'beatbar.ios.blurb': 'BeatBar Pocket trae herramientas de tempo y temporización a tu iPhone. Calcula BPM instantáneamente, convierte valores de notas y ajusta transposiciones donde sea que estés. Creado para músicos móviles y educadores que necesitan respuestas rápidas en cualquier lugar.',
     'beatbar.ios.feature1': 'Tap tempo y conversión BPM↔ms de valores de notas',
     'beatbar.ios.feature2': 'Calculadora Nota↔frecuencia (consciente de afinación A4)',
-    'beatbar.ios.feature3': 'Ayudantes de transposición y velocidad',
+    'beatbar.ios.feature3': 'Ayudas de transposición y velocidad',
     'beatbar.ios.feature4': 'Widgets de acceso rápido',
+    'beatbar.ios.feature5': 'Diseño limpio optimizado para móvil',
+    'beatbar.ios.feature6': 'Respaldado por los mismos paquetes Swift que la app de macOS',
+    'beatbarpocket.detail.closing': 'Ya sea que estés practicando, enseñando o actuando, BeatBar Pocket es tu kit de herramientas de tiempo esencial.',
     'beatbar.ios.learn': 'Más Información',
     
     // BeatLab macOS
@@ -558,6 +595,9 @@ const translations = {
     'beatbar.ios.feature2': 'Note↔Frequenz-Rechner (A4-Stimmung-bewusst)',
     'beatbar.ios.feature3': 'Transpositions- und Geschwindigkeitshelfer',
     'beatbar.ios.feature4': 'Schnellzugriffs-Widgets',
+    'beatbar.ios.feature5': 'Sauberes, mobilfreundliches Design',
+    'beatbar.ios.feature6': 'Basiert auf denselben Swift-Paketen wie die macOS-App',
+    'beatbarpocket.detail.closing': 'Ob Sie üben, unterrichten oder auftreten – BeatBar Pocket ist Ihr Timing-Werkzeugkasten für unterwegs.',
     'beatbar.ios.learn': 'Mehr Erfahren',
     
     // BeatLab macOS
@@ -646,6 +686,9 @@ const translations = {
     'beatbar.ios.feature2': 'Calculateur Note↔fréquence (sensible à l\'accordage A4)',
     'beatbar.ios.feature3': 'Aides à la transposition et à la vitesse',
     'beatbar.ios.feature4': 'Widgets d\'accès rapide',
+    'beatbar.ios.feature5': 'Design épuré et mobile-first',
+    'beatbar.ios.feature6': 'Alimenté par les mêmes packages Swift que l\'app macOS',
+    'beatbarpocket.detail.closing': 'Que vous pratiquiez, enseigniez ou jouiez, BeatBar Pocket est votre boîte à outils de timing portable.',
     'beatbar.ios.learn': 'En Savoir Plus',
     
     // BeatLab macOS
@@ -732,8 +775,11 @@ const translations = {
     'beatbar.ios.blurb': 'BeatBar Pocketは、テンポとタイミングツールをiPhoneにもたらします。BPMを瞬時に計算し、音符の値を変換し、どこにいても移調を調整できます。どこでも迅速な答えが必要なモバイルミュージシャンや教育者のために構築されています。',
     'beatbar.ios.feature1': 'タップテンポとBPM↔ms音符値変換',
     'beatbar.ios.feature2': '音符↔周波数計算機（A4チューニング対応）',
-    'beatbar.ios.feature3': '移調とスピードヘルパー',
+    'beatbar.ios.feature3': '移調と速度ヘルパー',
     'beatbar.ios.feature4': 'クイックアクセスウィジェット',
+    'beatbar.ios.feature5': 'クリーンでモバイルファーストなデザイン',
+    'beatbar.ios.feature6': 'macOSアプリと同じSwiftパッケージを使用',
+    'beatbarpocket.detail.closing': '練習、教育、演奏のいずれにも、BeatBar Pocketは必携のタイミングツールキットです。',
     'beatbar.ios.learn': '詳細を見る',
     
     // BeatLab macOS
@@ -821,7 +867,10 @@ const translations = {
     'beatbar.ios.feature1': '탭 템포 및 BPM↔ms 음표 값 변환',
     'beatbar.ios.feature2': '음표↔주파수 계산기 (A4 튜닝 인식)',
     'beatbar.ios.feature3': '이조 및 속도 도우미',
-    'beatbar.ios.feature4': '빠른 액세스 위젯',
+    'beatbar.ios.feature4': '빠른 접근 위젯',
+    'beatbar.ios.feature5': '깔끔한 모바일 우선 디자인',
+    'beatbar.ios.feature6': 'macOS 앱과 동일한 Swift 패키지 기반',
+    'beatbarpocket.detail.closing': '연습, 교육, 공연 중 어느 때나 BeatBar Pocket이 최고의 타이밍 도구입니다.',
     'beatbar.ios.learn': '자세히 보기',
     
     // BeatLab macOS
