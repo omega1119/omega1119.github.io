@@ -1,6 +1,7 @@
 // Translations for GITC website
 const translations = {
   en: {
+        'beatbar.macos.lightweight': 'BeatBar is lightweight, immediate, and always ready—so you can focus on your music.',
       // BeatBar extra details
       'beatbar.macos.feature6': 'Minimal, distraction-free UI',
       'beatbar.macos.feature7': 'Built on modular Swift Packages (BeatCore, BeatInput, BeatUI, BeatFeatures, BeatMacKit)',
@@ -92,6 +93,7 @@ const translations = {
   },
   
   pl: {
+        'beatbar.macos.lightweight': 'BeatBar jest lekki, natychmiastowy i zawsze gotowy — dzięki temu możesz skupić się na muzyce.',
       // Extra details
       'beatbar.macos.feature6': 'Minimalistyczny, nieprzeszkadzający interfejs',
       'beatbar.macos.feature7': 'Zbudowane na modułowych pakietach Swift (BeatCore, BeatInput, BeatUI, BeatFeatures, BeatMacKit)',
@@ -183,6 +185,7 @@ const translations = {
   },
   
   ptpt: {
+        'beatbar.macos.lightweight': 'O BeatBar é leve, imediato e está sempre pronto — para que se foque na sua música.',
       // Extra details
       'beatbar.macos.feature6': 'Interface minimalista e sem distrações',
       'beatbar.macos.feature7': 'Construído em pacotes Swift modulares (BeatCore, BeatInput, BeatUI, BeatFeatures, BeatMacKit)',
@@ -274,6 +277,7 @@ const translations = {
   },
   
   ptbr: {
+        'beatbar.macos.lightweight': 'O BeatBar é leve, imediato e está sempre pronto — para que você foque na sua música.',
       // Extra details
       'beatbar.macos.feature6': 'Interface minimalista e sem distrações',
       'beatbar.macos.feature7': 'Construído em pacotes Swift modulares (BeatCore, BeatInput, BeatUI, BeatFeatures, BeatMacKit)',
