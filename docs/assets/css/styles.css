@@ -185,10 +185,7 @@ img { max-width: 100%; height: auto; display: block }
 .product-icon { 
   width: 80px; 
   height: 80px; 
-  border-radius: 16px; 
-  background: linear-gradient(135deg, var(--green), #2d7a1a);
   margin-bottom: 8px;
-  box-shadow: 0 4px 12px rgba(67, 176, 42, 0.2);
 }
 .product-content h3 { 
   margin: 0 0 8px; 
