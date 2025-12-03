@@ -116,7 +116,7 @@ img { max-width: 100%; height: auto; display: block }
 .language-dropdown {
   display: none;
   position: absolute;
-  top: 50px;
+  top: calc(100% + 4px);
   right: 0;
   background: var(--card);
   border: 1px solid var(--border);
@@ -125,8 +125,7 @@ img { max-width: 100%; height: auto; display: block }
   min-width: 150px;
   z-index: 100;
 }
-.language-selector:hover .language-dropdown,
-.language-dropdown:hover {
+.language-selector:hover .language-dropdown {
   display: block;
 }
 .language-option {

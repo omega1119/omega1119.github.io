@@ -60,15 +60,19 @@
     
     const folder = langToBadgeFolder[lang] || 'US';
     
+      // Determine base path (with or without ../ depending on page location)
+      const isSubPage = window.location.pathname.includes('/products/');
+      const pathPrefix = isSubPage ? '../' : './';
+    
     // Update iOS App Store badges
     document.querySelectorAll('img[data-badge="ios"]').forEach(img => {
-      const basePath = '../assets/images/Download-on-the-App-Store';
+      const basePath = `${pathPrefix}assets/images/Download-on-the-App-Store`;
       img.src = `${basePath}/${folder}/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_${folder === 'US' ? 'US-UK' : folder}_RGB_blk_${getBadgeDate(folder, 'ios')}.svg`;
     });
     
     // Update macOS App Store badges
     document.querySelectorAll('img[data-badge="macos"]').forEach(img => {
-      const basePath = '../assets/images/Download-on-the-Mac-App-Store';
+      const basePath = `${pathPrefix}assets/images/Download-on-the-Mac-App-Store`;
       img.src = `${basePath}/${folder}/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_${folder === 'US' ? 'US-UK' : folder}_RGB_blk_${getBadgeDate(folder, 'macos')}.svg`;
     });
   }
