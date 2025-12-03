@@ -88,6 +88,336 @@ const translations = {
     'beatlabios.detail.description': 'BeatLab for iOS brings music theory exploration to your fingertips. Find scales, build chords, and analyze keys with a touch-friendly interface.',
   },
   
+  pl: {
+    // Header
+    'nav.products': 'Produkty',
+    'nav.about': 'O nas',
+    'nav.blog': 'Blog/Docs',
+    'nav.contact': 'Kontakt',
+    'theme.toggle': 'Przełącz motyw',
+    
+    // Hero
+    'hero.title': 'Przemyślane aplikacje od GITC',
+    'hero.subtitle': 'Znakomite narzędzia dla macOS i iOS tworzone z dbałością.',
+    'hero.cta.products': 'Poznaj Produkty',
+    'hero.cta.contact': 'Kontakt',
+    
+    // Products Section
+    'products.title': 'Produkty',
+    
+    // BeatBar macOS
+    'beatbar.macos.title': 'BeatBar (macOS)',
+    'beatbar.macos.tagline': 'Sterowanie muzyką z paska menu dla kreatywnego przepływu.',
+    'beatbar.macos.blurb': 'BeatBar dla macOS to natychmiastowy towarzysz rytmu w pasku menu. Stukaj tempo, analizuj MIDI i korzystaj z narzędzi do czasu bez przerywania pracy.',
+    'beatbar.macos.feature1': 'Globalny tap tempo i kalkulator BPM',
+    'beatbar.macos.feature2': 'Wykrywanie akordów/skali MIDI',
+    'beatbar.macos.feature3': 'Obliczenia czasu i analiza swing',
+    'beatbar.macos.feature4': 'Transpozycja i pomocniki nut',
+    'beatbar.macos.feature5': 'Konfigurowalne globalne skróty',
+    'beatbar.macos.learn': 'Dowiedz się więcej',
+    
+    // BeatBar Pocket iOS
+    'beatbar.ios.title': 'BeatBar Pocket (iOS)',
+    'beatbar.ios.tagline': 'Sterowanie muzyką w drodze.',
+    'beatbar.ios.blurb': 'BeatBar Pocket przenosi narzędzia tempa i czasu na iPhone’a. Szybko oblicz BPM, konwertuj wartości nut i dostosuj transpozycję gdziekolwiek jesteś.',
+    'beatbar.ios.feature1': 'Tap tempo i konwersja BPM↔ms wartości nut',
+    'beatbar.ios.feature2': 'Kalkulator nuta↔częstotliwość (A4)',
+    'beatbar.ios.feature3': 'Pomocniki transpozycji i prędkości',
+    'beatbar.ios.feature4': 'Widżety szybkiego dostępu',
+    'beatbar.ios.learn': 'Dowiedz się więcej',
+    
+    // BeatLab macOS
+    'beatlab.macos.title': 'BeatLab (macOS)',
+    'beatlab.macos.tagline': 'Laboratorium narzędzi dla audio.',
+    'beatlab.macos.blurb': 'BeatLab dla macOS to kreatywne laboratorium teorii muzyki do eksploracji skal, akordów i relacji muzycznych.',
+    'beatlab.macos.feature1': 'Rankingowe wyszukiwarki skal i akordów',
+    'beatlab.macos.feature2': 'Analiza nakładania tonacji i interwałów',
+    'beatlab.macos.feature3': 'Narzędzia pivot trybów i gęstości akordów',
+    'beatlab.macos.feature4': 'Wykrywanie oparte na MIDI i matematyka czasu',
+    'beatlab.macos.learn': 'Dowiedz się więcej',
+    
+    // BeatLab iOS
+    'beatlab.ios.title': 'BeatLab iOS (iOS)',
+    'beatlab.ios.tagline': 'Narzędzia audio dla iPhone/iPad.',
+    'beatlab.ios.blurb': 'BeatLab dla iOS przybliża eksplorację teorii muzyki. Znajduj skale, buduj akordy i analizuj tonacje w przyjaznym interfejsie dotykowym.',
+    'beatlab.ios.feature1': 'Rankingowe wyszukiwarki skal i akordów',
+    'beatlab.ios.feature2': 'Nuty w tonacji i akordy skali',
+    'beatlab.ios.feature3': 'Analiza nakładania tonacji/akordów i pivot trybów',
+    'beatlab.ios.feature4': 'Intuicyjny interfejs dotykowy',
+    'beatlab.ios.learn': 'Dowiedz się więcej',
+    
+    // Highlight
+    'highlight.quote': 'Dbamy o detale, wydajność i eleganckie doświadczenia użytkownika.',
+    
+    // About
+    'about.title': 'O GITC',
+    'about.text': 'GITC tworzy przemyślane, skoncentrowane aplikacje dla macOS i iOS. Łączymy pragmatyczną inżynierię z czystym designem, dostarczając narzędzia, które świetnie się używa każdego dnia.',
+    
+    // Contact
+    'contact.title': 'Kontakt i Social',
+    'contact.email': 'Email:',
+    'contact.email.reveal': 'Pokaż email',
+    'contact.github': 'GitHub:',
+    
+    // Footer
+    'footer.privacy': 'Prywatność',
+    'footer.terms': 'Warunki',
+    'footer.source': 'Kod Źródłowy',
+    
+    // Product Detail Pages
+    'features.title': 'Funkcje',
+    'beatbar.detail.title': 'BeatBar dla macOS',
+    'beatbar.detail.description': 'BeatBar dla macOS to natychmiastowy towarzysz rytmu z paska menu. Stukaj tempo, analizuj MIDI i konwertuj wartości nut bez przerywania pracy.',
+    'beatbarpocket.detail.title': 'BeatBar Pocket dla iOS',
+    'beatbarpocket.detail.description': 'BeatBar Pocket przenosi narzędzia tempa i czasu na iPhone’a. Szybkie obliczenia BPM i konwersje wartości nut.',
+    'beatlabmac.detail.title': 'BeatLab dla macOS',
+    'beatlabmac.detail.description': 'BeatLab dla macOS to kreatywne laboratorium teorii muzyki do eksploracji skal i akordów.',
+    'beatlabios.detail.title': 'BeatLab dla iOS',
+    'beatlabios.detail.description': 'BeatLab dla iOS ułatwia eksplorację teorii muzyki z interfejsem przyjaznym dotykowi.'
+  },
+  
+  ptpt: {
+    // Header
+    'nav.products': 'Produtos',
+    'nav.about': 'Sobre',
+    'nav.blog': 'Blog/Docs',
+    'nav.contact': 'Contacto',
+    'theme.toggle': 'Alternar tema',
+    
+    // Hero
+    'hero.title': 'Apps cuidadas pela GITC',
+    'hero.subtitle': 'Utilitários macOS e iOS criados com cuidado.',
+    'hero.cta.products': 'Explorar Produtos',
+    'hero.cta.contact': 'Contacto',
+    
+    // Products Section
+    'products.title': 'Produtos',
+    
+    // BeatBar macOS
+    'beatbar.macos.title': 'BeatBar (macOS)',
+    'beatbar.macos.tagline': 'Controlos de música na barra de menu para fluxo criativo.',
+    'beatbar.macos.blurb': 'BeatBar para macOS é o seu companheiro de ritmo instantâneo na barra de menu. Toque o tempo, analise MIDI e aceda a ferramentas de temporização sem interromper o seu fluxo.',
+    'beatbar.macos.feature1': 'Tap tempo global e calculadora BPM',
+    'beatbar.macos.feature2': 'Deteção de acordes/escalas MIDI',
+    'beatbar.macos.feature3': 'Matemática de tempo e análise de swing',
+    'beatbar.macos.feature4': 'Transposição e auxiliares de notas',
+    'beatbar.macos.feature5': 'Atalhos globais personalizáveis',
+    'beatbar.macos.learn': 'Saiba Mais',
+    
+    // BeatBar Pocket iOS
+    'beatbar.ios.title': 'BeatBar Pocket (iOS)',
+    'beatbar.ios.tagline': 'Controlos de música em movimento.',
+    'beatbar.ios.blurb': 'BeatBar Pocket leva ferramentas de tempo e temporização ao iPhone. Calcule BPM instantaneamente, converta valores de notas e ajuste transposições onde estiver.',
+    'beatbar.ios.feature1': 'Tap tempo e conversão BPM↔ms de valores de notas',
+    'beatbar.ios.feature2': 'Calculadora nota↔frequência (ajuste A4)',
+    'beatbar.ios.feature3': 'Auxiliares de transposição e velocidade',
+    'beatbar.ios.feature4': 'Widgets de acesso rápido',
+    'beatbar.ios.learn': 'Saiba Mais',
+    
+    // BeatLab macOS
+    'beatlab.macos.title': 'BeatLab (macOS)',
+    'beatlab.macos.tagline': 'Um laboratório de ferramentas para fluxos de áudio.',
+    'beatlab.macos.blurb': 'BeatLab para macOS é um laboratório criativo de teoria para explorar escalas, acordes e relações musicais.',
+    'beatlab.macos.feature1': 'Pesquisadores classificados de escalas e acordes',
+    'beatlab.macos.feature2': 'Análise de sobreposição de tonalidades e intervalos',
+    'beatlab.macos.feature3': 'Ferramentas de pivô de modos e densidade de acordes',
+    'beatlab.macos.feature4': 'Deteção com MIDI e matemática de temporização',
+    'beatlab.macos.learn': 'Saiba Mais',
+    
+    // BeatLab iOS
+    'beatlab.ios.title': 'BeatLab iOS (iOS)',
+    'beatlab.ios.tagline': 'Utilitários de áudio para iPhone/iPad.',
+    'beatlab.ios.blurb': 'BeatLab para iOS traz a exploração da teoria musical para as suas mãos. Encontre escalas, construa acordes e analise tonalidades com uma interface amigável ao toque.',
+    'beatlab.ios.feature1': 'Pesquisadores classificados de escalas e acordes',
+    'beatlab.ios.feature2': 'Notas na tonalidade e ferramentas de acordes da escala',
+    'beatlab.ios.feature3': 'Análise de sobreposição de tonalidades/acordes e pivô de modos',
+    'beatlab.ios.feature4': 'Interface intuitiva e amigável ao toque',
+    'beatlab.ios.learn': 'Saiba Mais',
+    
+    // Highlight
+    'highlight.quote': 'Valorizamos detalhes, desempenho e experiências elegantes.',
+    
+    // About
+    'about.title': 'Sobre a GITC',
+    'about.text': 'A GITC constrói apps cuidadas para macOS e iOS, focadas em desempenho e elegância.',
+    
+    // Contact
+    'contact.title': 'Contacto & Social',
+    'contact.email': 'Email:',
+    'contact.email.reveal': 'Mostrar email',
+    'contact.github': 'GitHub:',
+    
+    // Footer
+    'footer.privacy': 'Privacidade',
+    'footer.terms': 'Termos',
+    'footer.source': 'Código do Site',
+    
+    // Product Detail Pages
+    'features.title': 'Funcionalidades',
+    'beatbar.detail.title': 'BeatBar para macOS',
+    'beatbar.detail.description': 'BeatBar para macOS é o seu companheiro de ritmo instantâneo na barra de menu.',
+    'beatbarpocket.detail.title': 'BeatBar Pocket para iOS',
+    'beatbarpocket.detail.description': 'BeatBar Pocket traz ferramentas de tempo e temporização ao iPhone.',
+    'beatlabmac.detail.title': 'BeatLab para macOS',
+    'beatlabmac.detail.description': 'BeatLab para macOS é um laboratório criativo de teoria musical.',
+    'beatlabios.detail.title': 'BeatLab para iOS',
+    'beatlabios.detail.description': 'BeatLab para iOS facilita a exploração da teoria musical.'
+  },
+  
+  ptbr: {
+    // Header
+    'nav.products': 'Produtos',
+    'nav.about': 'Sobre',
+    'nav.blog': 'Blog/Docs',
+    'nav.contact': 'Contato',
+    'theme.toggle': 'Alternar tema',
+    
+    // Hero
+    'hero.title': 'Apps cuidadosas da GITC',
+    'hero.subtitle': 'Utilitários para macOS e iOS feitos com cuidado.',
+    'hero.cta.products': 'Explorar Produtos',
+    'hero.cta.contact': 'Contato',
+    
+    // Products Section
+    'products.title': 'Produtos',
+    
+    // BeatBar macOS
+    'beatbar.macos.title': 'BeatBar (macOS)',
+    'beatbar.macos.tagline': 'Controles de música na barra de menu para fluxo criativo.',
+    'beatbar.macos.blurb': 'BeatBar para macOS é seu companheiro de ritmo instantâneo na barra de menu. Toque o tempo, analise MIDI e acesse ferramentas de temporização sem interromper seu fluxo.',
+    'beatbar.macos.feature1': 'Tap tempo global e calculadora BPM',
+    'beatbar.macos.feature2': 'Detecção de acordes/escalas MIDI',
+    'beatbar.macos.feature3': 'Matemática de tempo e análise de swing',
+    'beatbar.macos.feature4': 'Transposição e auxiliares de notas',
+    'beatbar.macos.feature5': 'Atalhos globais personalizáveis',
+    'beatbar.macos.learn': 'Saiba Mais',
+    
+    // BeatBar Pocket iOS
+    'beatbar.ios.title': 'BeatBar Pocket (iOS)',
+    'beatbar.ios.tagline': 'Controles de música em movimento.',
+    'beatbar.ios.blurb': 'BeatBar Pocket traz ferramentas de tempo e temporização para seu iPhone. Calcule BPM instantaneamente, converta valores de notas e ajuste transposições em qualquer lugar.',
+    'beatbar.ios.feature1': 'Tap tempo e conversão BPM↔ms de valores de notas',
+    'beatbar.ios.feature2': 'Calculadora nota↔frequência (afinação A4)',
+    'beatbar.ios.feature3': 'Auxiliares de transposição e velocidade',
+    'beatbar.ios.feature4': 'Widgets de acesso rápido',
+    'beatbar.ios.learn': 'Saiba Mais',
+    
+    // BeatLab macOS
+    'beatlab.macos.title': 'BeatLab (macOS)',
+    'beatlab.macos.tagline': 'Um laboratório de ferramentas para fluxos de áudio.',
+    'beatlab.macos.blurb': 'BeatLab para macOS é um laboratório criativo de teoria para explorar escalas, acordes e relações musicais.',
+    'beatlab.macos.feature1': 'Pesquisas classificadas de escalas e acordes',
+    'beatlab.macos.feature2': 'Análise de sobreposição de tonalidades e intervalos',
+    'beatlab.macos.feature3': 'Ferramentas de pivô de modos e densidade de acordes',
+    'beatlab.macos.feature4': 'Detecção baseada em MIDI e matemática de temporização',
+    'beatlab.macos.learn': 'Saiba Mais',
+    
+    // BeatLab iOS
+    'beatlab.ios.title': 'BeatLab iOS (iOS)',
+    'beatlab.ios.tagline': 'Utilitários de áudio para iPhone/iPad.',
+    'beatlab.ios.blurb': 'BeatLab para iOS traz a exploração da teoria musical para suas mãos. Encontre escalas, construa acordes e analise tonalidades com uma interface amigável ao toque.',
+    'beatlab.ios.feature1': 'Pesquisas classificadas de escalas e acordes',
+    'beatlab.ios.feature2': 'Notas na tonalidade e ferramentas de acordes da escala',
+    'beatlab.ios.feature3': 'Análise de sobreposição de tonalidades/acordes e pivô de modos',
+    'beatlab.ios.feature4': 'Interface intuitiva e amigável ao toque',
+    'beatlab.ios.learn': 'Saiba Mais',
+    
+    // Highlight
+    'highlight.quote': 'Valorizamos detalhes, desempenho e experiências elegantes.',
+    
+    // About
+    'about.title': 'Sobre a GITC',
+    'about.text': 'A GITC constrói apps cuidadosas para macOS e iOS, focando em velocidade e confiabilidade.',
+    
+    // Contact
+    'contact.title': 'Contato & Social',
+    'contact.email': 'Email:',
+    'contact.email.reveal': 'Mostrar email',
+    'contact.github': 'GitHub:',
+    
+    // Footer
+    'footer.privacy': 'Privacidade',
+    'footer.terms': 'Termos',
+    'footer.source': 'Código do Site',
+    
+    // Product Detail Pages
+    'features.title': 'Funcionalidades',
+    'beatbar.detail.title': 'BeatBar para macOS',
+    'beatbar.detail.description': 'BeatBar para macOS é seu companheiro de ritmo instantâneo na barra de menu.',
+    'beatbarpocket.detail.title': 'BeatBar Pocket para iOS',
+    'beatbarpocket.detail.description': 'BeatBar Pocket traz ferramentas de tempo e temporização para o iPhone.',
+    'beatlabmac.detail.title': 'BeatLab para macOS',
+    'beatlabmac.detail.description': 'BeatLab para macOS é um laboratório criativo de teoria musical.',
+    'beatlabios.detail.title': 'BeatLab para iOS',
+    'beatlabios.detail.description': 'BeatLab para iOS facilita a exploração da teoria musical.'
+  },
+  
+  // Fallback for generic Portuguese locale detection (maps to Brazilian Portuguese)
+  pt: {
+    'nav.products': 'Produtos',
+    'nav.about': 'Sobre',
+    'nav.blog': 'Blog/Docs',
+    'nav.contact': 'Contato',
+    'theme.toggle': 'Alternar tema',
+    'hero.title': 'Apps cuidadosas da GITC',
+    'hero.subtitle': 'Utilitários para macOS e iOS feitos com cuidado.',
+    'hero.cta.products': 'Explorar Produtos',
+    'hero.cta.contact': 'Contato',
+    'products.title': 'Produtos',
+    'beatbar.macos.title': 'BeatBar (macOS)',
+    'beatbar.macos.tagline': 'Controles de música na barra de menu para fluxo criativo.',
+    'beatbar.macos.blurb': 'BeatBar para macOS é seu companheiro de ritmo instantâneo na barra de menu. Toque o tempo, analise MIDI e acesse ferramentas de temporização sem interromper seu fluxo.',
+    'beatbar.macos.feature1': 'Tap tempo global e calculadora BPM',
+    'beatbar.macos.feature2': 'Detecção de acordes/escalas MIDI',
+    'beatbar.macos.feature3': 'Matemática de tempo e análise de swing',
+    'beatbar.macos.feature4': 'Transposição e auxiliares de notas',
+    'beatbar.macos.feature5': 'Atalhos globais personalizáveis',
+    'beatbar.macos.learn': 'Saiba Mais',
+    'beatbar.ios.title': 'BeatBar Pocket (iOS)',
+    'beatbar.ios.tagline': 'Controles de música em movimento.',
+    'beatbar.ios.blurb': 'BeatBar Pocket traz ferramentas de tempo e temporização para seu iPhone. Calcule BPM instantaneamente, converta valores de notas e ajuste transposições em qualquer lugar.',
+    'beatbar.ios.feature1': 'Tap tempo e conversão BPM↔ms de valores de notas',
+    'beatbar.ios.feature2': 'Calculadora nota↔frequência (afinação A4)',
+    'beatbar.ios.feature3': 'Auxiliares de transposição e velocidade',
+    'beatbar.ios.feature4': 'Widgets de acesso rápido',
+    'beatbar.ios.learn': 'Saiba Mais',
+    'beatlab.macos.title': 'BeatLab (macOS)',
+    'beatlab.macos.tagline': 'Um laboratório de ferramentas para fluxos de áudio.',
+    'beatlab.macos.blurb': 'BeatLab para macOS é um laboratório criativo de teoria para explorar escalas, acordes e relações musicais.',
+    'beatlab.macos.feature1': 'Pesquisas classificadas de escalas e acordes',
+    'beatlab.macos.feature2': 'Análise de sobreposição de tonalidades e intervalos',
+    'beatlab.macos.feature3': 'Ferramentas de pivô de modos e densidade de acordes',
+    'beatlab.macos.feature4': 'Detecção baseada em MIDI e matemática de temporização',
+    'beatlab.macos.learn': 'Saiba Mais',
+    'beatlab.ios.title': 'BeatLab iOS (iOS)',
+    'beatlab.ios.tagline': 'Utilitários de áudio para iPhone/iPad.',
+    'beatlab.ios.blurb': 'BeatLab para iOS traz a exploração da teoria musical para suas mãos. Encontre escalas, construa acordes e analise tonalidades com uma interface amigável ao toque.',
+    'beatlab.ios.feature1': 'Pesquisas classificadas de escalas e acordes',
+    'beatlab.ios.feature2': 'Notas na tonalidade e ferramentas de acordes da escala',
+    'beatlab.ios.feature3': 'Análise de sobreposição de tonalidades/acordes e pivô de modos',
+    'beatlab.ios.feature4': 'Interface intuitiva e amigável ao toque',
+    'beatlab.ios.learn': 'Saiba Mais',
+    'highlight.quote': 'Valorizamos detalhes, desempenho e experiências elegantes.',
+    'about.title': 'Sobre a GITC',
+    'about.text': 'A GITC constrói apps cuidadosas para macOS e iOS, focando em velocidade e confiabilidade.',
+    'contact.title': 'Contato & Social',
+    'contact.email': 'Email:',
+    'contact.email.reveal': 'Mostrar email',
+    'contact.github': 'GitHub:',
+    'footer.privacy': 'Privacidade',
+    'footer.terms': 'Termos',
+    'footer.source': 'Código do Site',
+    'features.title': 'Funcionalidades',
+    'beatbar.detail.title': 'BeatBar para macOS',
+    'beatbar.detail.description': 'BeatBar para macOS é seu companheiro de ritmo instantâneo na barra de menu.',
+    'beatbarpocket.detail.title': 'BeatBar Pocket para iOS',
+    'beatbarpocket.detail.description': 'BeatBar Pocket traz ferramentas de tempo e temporização para o iPhone.',
+    'beatlabmac.detail.title': 'BeatLab para macOS',
+    'beatlabmac.detail.description': 'BeatLab para macOS é um laboratório criativo de teoria musical.',
+    'beatlabios.detail.title': 'BeatLab para iOS',
+    'beatlabios.detail.description': 'BeatLab para iOS facilita a exploração da teoria musical.'
+  },
+  
   es: {
     // Header
     'nav.products': 'Productos',
