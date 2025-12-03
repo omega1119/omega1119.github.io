@@ -89,6 +89,68 @@ img { max-width: 100%; height: auto; display: block }
 .theme-toggle:hover { background: var(--card); transform: rotate(20deg) }
 .theme-toggle:focus { outline: 2px solid var(--green); outline-offset: 4px }
 
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+.language-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.language-btn:hover {
+  background: var(--card);
+}
+.language-btn:focus {
+  outline: 2px solid var(--green);
+  outline-offset: 4px;
+}
+.language-dropdown {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  min-width: 150px;
+  z-index: 100;
+}
+.language-selector:hover .language-dropdown,
+.language-dropdown:hover {
+  display: block;
+}
+.language-option {
+  display: block;
+  padding: 10px 16px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border);
+}
+.language-option:last-child {
+  border-bottom: none;
+}
+.language-option:hover {
+  background: var(--bg);
+  color: var(--text);
+}
+.language-option.active {
+  color: var(--green);
+  font-weight: 600;
+}
+
 .hero { 
   padding: 120px 0 100px;
   text-align: center;

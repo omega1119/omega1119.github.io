@@ -5,6 +5,109 @@
   const navToggle = document.querySelector('.nav-toggle');
   const yearEl = document.getElementById('year');
 
+  // Language support
+  let currentLang = localStorage.getItem('language') || navigator.language.split('-')[0] || 'en';
+  if (!translations[currentLang]) currentLang = 'en';
+
+  function translate(key) {
+    return translations[currentLang]?.[key] || translations.en[key] || key;
+  }
+
+  function updatePageLanguage() {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = translate(key);
+      } else {
+        el.textContent = translate(key);
+      }
+    });
+    
+    document.querySelectorAll('[data-i18n-title]').forEach(el => {
+      const key = el.getAttribute('data-i18n-title');
+      el.setAttribute('title', translate(key));
+      el.setAttribute('aria-label', translate(key));
+    });
+
+    root.setAttribute('lang', currentLang);
+  }
+
+  function setLanguage(lang) {
+    if (translations[lang]) {
+      currentLang = lang;
+      localStorage.setItem('language', lang);
+      updatePageLanguage();
+      updateAppStoreBadges(lang);
+      
+      // Update language selector
+      document.querySelectorAll('.language-option').forEach(opt => {
+        opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
+      });
+    }
+  }
+
+  // Update App Store badges based on language
+  function updateAppStoreBadges(lang) {
+    // Map language codes to badge folder names
+    const langToBadgeFolder = {
+      'en': 'US',
+      'es': 'ES',
+      'de': 'DE',
+      'fr': 'FR',
+      'ja': 'JP',
+      'ko': 'KR'
+    };
+    
+    const folder = langToBadgeFolder[lang] || 'US';
+    
+    // Update iOS App Store badges
+    document.querySelectorAll('img[data-badge="ios"]').forEach(img => {
+      const basePath = '../assets/images/Download-on-the-App-Store';
+      img.src = `${basePath}/${folder}/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_${folder === 'US' ? 'US-UK' : folder}_RGB_blk_${getBadgeDate(folder, 'ios')}.svg`;
+    });
+    
+    // Update macOS App Store badges
+    document.querySelectorAll('img[data-badge="macos"]').forEach(img => {
+      const basePath = '../assets/images/Download-on-the-Mac-App-Store';
+      img.src = `${basePath}/${folder}/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_${folder === 'US' ? 'US-UK' : folder}_RGB_blk_${getBadgeDate(folder, 'macos')}.svg`;
+    });
+  }
+  
+  function getBadgeDate(folder, type) {
+    // Map folder/type to specific badge file dates
+    const dates = {
+      ios: {
+        'US': '092917',
+        'ES': '100217',
+        'DE': '092917',
+        'FR': '100517',
+        'JP': '100317',
+        'KR': '100317'
+      },
+      macos: {
+        'US': '092917',
+        'ES': '100217',
+        'DE': '092917',
+        'FR': '100217',
+        'JP': '100317',
+        'KR': '100317'
+      }
+    };
+    return dates[type]?.[folder] || '092917';
+  }
+
+  // Initialize language
+  updatePageLanguage();
+  updateAppStoreBadges(currentLang);
+
+  // Language selector event
+  document.querySelectorAll('.language-option').forEach(option => {
+    option.addEventListener('click', (e) => {
+      e.preventDefault();
+      setLanguage(option.getAttribute('data-lang'));
+    });
+  });
+
   // Update theme-aware images
   function updateThemeImages(theme) {
     document.querySelectorAll('picture').forEach(picture => {
@@ -37,6 +140,20 @@
     }
   });
   updateThemeImages(initial);
+  
+  // Listen for system theme changes
+  const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  darkModeQuery.addEventListener('change', (e) => {
+    // Only update if user hasn't manually set a preference
+    if (!localStorage.getItem('theme')) {
+      const newTheme = e.matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', newTheme);
+      if (themeBtn) {
+        themeBtn.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+      }
+      updateThemeImages(newTheme);
+    }
+  });
   
   if(themeBtn){
     themeBtn.textContent = initial === 'dark' ? '☀️' : '🌙';

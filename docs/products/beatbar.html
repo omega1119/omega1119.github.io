@@ -48,6 +48,7 @@
   
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script defer src="../assets/js/translations.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -83,23 +84,36 @@
   </script>
 </head>
 <body>
-  <header class="site-header"><div class="container header-inner"><a class="logo" href="../">GITC</a></div></header>
+  <header class="site-header"><div class="container header-inner"><a class="logo" href="../">GITC</a><div class="language-selector">
+      <button class="language-btn" aria-label="Select language">
+        <span class="current-lang">EN</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="language-dropdown">
+        <button class="language-option" data-lang="en">English</button>
+        <button class="language-option" data-lang="es">Español</button>
+        <button class="language-option" data-lang="de">Deutsch</button>
+        <button class="language-option" data-lang="fr">Français</button>
+        <button class="language-option" data-lang="ja">日本語</button>
+        <button class="language-option" data-lang="ko">한국어</button>
+      </div>
+    </div></div></header>
   <main class="container" style="padding:40px 0">
     <picture>
       <source srcset="../assets/images/Beat Bar-macOS-Dark-1024x1024@1x.png" data-theme="dark">
       <img src="../assets/images/Beat Bar-macOS-Default-1024x1024@1x.png" alt="BeatBar macOS app icon" width="128" height="128" style="margin-bottom: 20px;" />
     </picture>
-    <h1>BeatBar for macOS: Menu Bar Rhythm Toolkit</h1>
-    <p>BeatBar is designed for musicians who value speed and precision. It sits in your menu bar, offering global tap tempo, timing and swing calculators, live chord and scale detection from MIDI, and transposition helpers.</p>
+    <h1 data-i18n="beatbar.detail.title">BeatBar for macOS: Menu Bar Rhythm Toolkit</h1>
+    <p data-i18n="beatbar.detail.description">BeatBar is designed for musicians who value speed and precision. It sits in your menu bar, offering global tap tempo, timing and swing calculators, live chord and scale detection from MIDI, and transposition helpers.</p>
     
-    <h2>Features</h2>
+    <h2 data-i18n="features.title">Features</h2>
     <ul>
-      <li>Global tap tempo and BPM calculator</li>
-      <li>MIDI chord/scale detection</li>
-      <li>Timing math and swing analysis</li>
-      <li>Transposition and note helpers</li>
+      <li data-i18n="beatbar.macos.feature1">Global tap tempo and BPM calculator</li>
+      <li data-i18n="beatbar.macos.feature2">MIDI chord/scale detection</li>
+      <li data-i18n="beatbar.macos.feature3">Timing math and swing analysis</li>
+      <li data-i18n="beatbar.macos.feature4">Transposition and note helpers</li>
       <li>Minimal, distraction-free UI</li>
-      <li>Customizable global hotkeys</li>
+      <li data-i18n="beatbar.macos.feature5">Customizable global hotkeys</li>
       <li>Built on modular Swift Packages (BeatCore, BeatInput, BeatUI, BeatFeatures, BeatMacKit)</li>
     </ul>
     
@@ -107,7 +121,7 @@
     
     <p>
       <a href="https://apps.apple.com/" aria-label="View BeatBar on the Mac App Store">
-        <img src="../assets/images/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the Mac App Store" width="180" height="53">
+        <img data-badge="macos" src="../assets/images/Download-on-the-Mac-App-Store/US/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the Mac App Store" width="180" height="53">
       </a>
     </p>
   </main>

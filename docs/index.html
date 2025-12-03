@@ -54,6 +54,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="./assets/css/styles.css" />
+  
+  <!-- Language alternates for SEO -->
+  <link rel="alternate" hreflang="en" href="https://gitc.digital/" />
+  <link rel="alternate" hreflang="es" href="https://gitc.digital/es/" />
+  <link rel="alternate" hreflang="de" href="https://gitc.digital/de/" />
+  <link rel="alternate" hreflang="fr" href="https://gitc.digital/fr/" />
+  <link rel="alternate" hreflang="ja" href="https://gitc.digital/ja/" />
+  <link rel="alternate" hreflang="ko" href="https://gitc.digital/ko/" />
+  <link rel="alternate" hreflang="x-default" href="https://gitc.digital/" />
+  
+  <script src="./assets/js/translations.js"></script>
   <script defer src="./assets/js/main.js"></script>
   <script type="application/ld+json">
   {
@@ -148,31 +159,42 @@
       <nav class="nav" role="navigation" aria-label="Primary">
         <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
         <ul id="primary-menu" class="nav-list">
-          <li><a href="#products">Products</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="./" aria-disabled="true">Blog/Docs</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#products" data-i18n="nav.products">Products</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="./" aria-disabled="true" data-i18n="nav.blog">Blog/Docs</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
-      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme"></button>
+      <div class="language-selector">
+        <button class="language-btn" aria-label="Change language" title="Change language">🌍</button>
+        <div class="language-dropdown">
+          <a class="language-option" href="/" data-lang="en">English</a>
+          <a class="language-option" href="/es/" data-lang="es">Español</a>
+          <a class="language-option" href="/de/" data-lang="de">Deutsch</a>
+          <a class="language-option" href="/fr/" data-lang="fr">Français</a>
+          <a class="language-option" href="/ja/" data-lang="ja">日本語</a>
+          <a class="language-option" href="/ko/" data-lang="ko">한국어</a>
+        </div>
+      </div>
+      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme" data-i18n-title="theme.toggle"></button>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-inner">
-        <h1 id="hero-title">Thoughtful apps by GITC</h1>
-        <p class="subhead">Delightful macOS & iOS utilities crafted with care.</p>
+        <h1 id="hero-title" data-i18n="hero.title">Thoughtful apps by GITC</h1>
+        <p class="subhead" data-i18n="hero.subtitle">Delightful macOS & iOS utilities crafted with care.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="#products">Explore Products</a>
-          <a class="btn btn-secondary" href="#contact">Contact</a>
+          <a class="btn btn-primary" href="#products" data-i18n="hero.cta.products">Explore Products</a>
+          <a class="btn btn-secondary" href="#contact" data-i18n="hero.cta.contact">Contact</a>
         </div>
       </div>
     </section>
 
     <section id="products" class="products" aria-labelledby="products-title">
       <div class="container">
-        <h2 id="products-title">Products</h2>
+        <h2 id="products-title" data-i18n="products.title">Products</h2>
         <!-- AI/LLM Context: GITC develops four music applications -->
         <div class="product-grid" role="list" itemscope itemtype="https://schema.org/ItemList">
           <!-- Product Card Template: BeatBar (macOS) -->
@@ -182,21 +204,21 @@
               <img class="product-icon" src="./assets/images/Beat Bar-macOS-Default-1024x1024@1x.png" alt="BeatBar macOS app icon" loading="lazy" width="128" height="128" />
             </picture>
             <div class="product-content">
-              <h3>BeatBar (macOS)</h3>
-              <p class="tagline">Menu bar music controls for creative flow.</p>
-              <p class="blurb">BeatBar for macOS is your instant rhythm companion, living in the menu bar. Tap tempo, analyze MIDI, and access timing tools without leaving your workflow. Designed for musicians who want quick, reliable access to essential utilities.</p>
+              <h3 data-i18n="beatbar.macos.title">BeatBar (macOS)</h3>
+              <p class="tagline" data-i18n="beatbar.macos.tagline">Menu bar music controls for creative flow.</p>
+              <p class="blurb" data-i18n="beatbar.macos.blurb">BeatBar for macOS is your instant rhythm companion, living in the menu bar. Tap tempo, analyze MIDI, and access timing tools without leaving your workflow. Designed for musicians who want quick, reliable access to essential utilities.</p>
               <ul class="features">
-                <li>Global tap tempo and BPM calculator</li>
-                <li>MIDI chord/scale detection</li>
-                <li>Timing math and swing analysis</li>
-                <li>Transposition and note helpers</li>
-                <li>Customizable global hotkeys</li>
+                <li data-i18n="beatbar.macos.feature1">Global tap tempo and BPM calculator</li>
+                <li data-i18n="beatbar.macos.feature2">MIDI chord/scale detection</li>
+                <li data-i18n="beatbar.macos.feature3">Timing math and swing analysis</li>
+                <li data-i18n="beatbar.macos.feature4">Transposition and note helpers</li>
+                <li data-i18n="beatbar.macos.feature5">Customizable global hotkeys</li>
               </ul>
               <div class="actions">
                 <a href="https://apps.apple.com/" aria-label="View BeatBar on the Mac App Store">
                   <img src="./assets/images/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the Mac App Store" width="180" height="53">
                 </a>
-                <a class="btn btn-tertiary" href="./products/beatbar.html">Learn More</a>
+                <a class="btn btn-tertiary" href="./products/beatbar.html" data-i18n="beatbar.macos.learn">Learn More</a>
               </div>
             </div>
           </article>
@@ -208,20 +230,20 @@
               <img class="product-icon" src="./assets/images/Beat Bar-iOS-Default-1024x1024@1x.png" alt="BeatBar Pocket iOS app icon" loading="lazy" width="128" height="128" />
             </picture>
             <div class="product-content">
-              <h3>BeatBar Pocket (iOS)</h3>
-              <p class="tagline">Music controls on the go.</p>
-              <p class="blurb">BeatBar Pocket brings tempo and timing tools to your iPhone. Instantly calculate BPM, convert note values, and adjust transpositions wherever you are. Built for mobile musicians and educators who need fast answers anywhere.</p>
+              <h3 data-i18n="beatbar.ios.title">BeatBar Pocket (iOS)</h3>
+              <p class="tagline" data-i18n="beatbar.ios.tagline">Music controls on the go.</p>
+              <p class="blurb" data-i18n="beatbar.ios.blurb">BeatBar Pocket brings tempo and timing tools to your iPhone. Instantly calculate BPM, convert note values, and adjust transpositions wherever you are. Built for mobile musicians and educators who need fast answers anywhere.</p>
               <ul class="features">
-                <li>Tap tempo and BPM↔ms note value conversion</li>
-                <li>Note↔frequency calculator (A4-tuning aware)</li>
-                <li>Transpose and speed helpers</li>
-                <li>Quick access widgets</li>
+                <li data-i18n="beatbar.ios.feature1">Tap tempo and BPM↔ms note value conversion</li>
+                <li data-i18n="beatbar.ios.feature2">Note↔frequency calculator (A4-tuning aware)</li>
+                <li data-i18n="beatbar.ios.feature3">Transpose and speed helpers</li>
+                <li data-i18n="beatbar.ios.feature4">Quick access widgets</li>
               </ul>
               <div class="actions">
                 <a href="https://apps.apple.com/" aria-label="View BeatBar Pocket on the App Store">
                   <img src="./assets/images/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" width="180" height="53">
                 </a>
-                <a class="btn btn-tertiary" href="./products/beatbar-pocket.html">Learn More</a>
+                <a class="btn btn-tertiary" href="./products/beatbar-pocket.html" data-i18n="beatbar.ios.learn">Learn More</a>
               </div>
             </div>
           </article>
@@ -233,20 +255,20 @@
               <img class="product-icon" src="./assets/images/Beat Lab-macOS-Default-1024x1024@1x.png" alt="BeatLab macOS app icon" loading="lazy" width="128" height="128" />
             </picture>
             <div class="product-content">
-              <h3>BeatLab (macOS)</h3>
-              <p class="tagline">A lab of tools for audio workflows.</p>
-              <p class="blurb">BeatLab for macOS is a creative theory lab for exploring scales, chords, and musical relationships. Dive into advanced analysis, discover new progressions, and experiment with harmonic ideas—all powered by a flexible engine.</p>
+              <h3 data-i18n="beatlab.macos.title">BeatLab (macOS)</h3>
+              <p class="tagline" data-i18n="beatlab.macos.tagline">A lab of tools for audio workflows.</p>
+              <p class="blurb" data-i18n="beatlab.macos.blurb">BeatLab for macOS is a creative theory lab for exploring scales, chords, and musical relationships. Dive into advanced analysis, discover new progressions, and experiment with harmonic ideas—all powered by a flexible engine.</p>
               <ul class="features">
-                <li>Ranked scale and chord finders</li>
-                <li>Key and interval overlap analysis</li>
-                <li>Mode pivot and chord density tools</li>
-                <li>MIDI-driven detection and timing math</li>
+                <li data-i18n="beatlab.macos.feature1">Ranked scale and chord finders</li>
+                <li data-i18n="beatlab.macos.feature2">Key and interval overlap analysis</li>
+                <li data-i18n="beatlab.macos.feature3">Mode pivot and chord density tools</li>
+                <li data-i18n="beatlab.macos.feature4">MIDI-driven detection and timing math</li>
               </ul>
               <div class="actions">
                 <a href="https://apps.apple.com/" aria-label="View BeatLab on the Mac App Store">
                   <img src="./assets/images/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the Mac App Store" width="180" height="53">
                 </a>
-                <a class="btn btn-tertiary" href="./products/beatlab.html">Learn More</a>
+                <a class="btn btn-tertiary" href="./products/beatlab.html" data-i18n="beatlab.macos.learn">Learn More</a>
               </div>
             </div>
           </article>
@@ -258,20 +280,20 @@
               <img class="product-icon" src="./assets/images/Beat Lab-iOS-Default-1024x1024@1x.png" alt="BeatLab iOS app icon" loading="lazy" width="128" height="128" />
             </picture>
             <div class="product-content">
-              <h3>BeatLab iOS (iOS)</h3>
-              <p class="tagline">Audio utilities for iPhone/iPad.</p>
-              <p class="blurb">BeatLab for iOS brings music theory exploration to your fingertips. Find scales, build chords, and analyze keys with a touch-friendly interface. Perfect for students, teachers, and anyone curious about music structure.</p>
+              <h3 data-i18n="beatlab.ios.title">BeatLab iOS (iOS)</h3>
+              <p class="tagline" data-i18n="beatlab.ios.tagline">Audio utilities for iPhone/iPad.</p>
+              <p class="blurb" data-i18n="beatlab.ios.blurb">BeatLab for iOS brings music theory exploration to your fingertips. Find scales, build chords, and analyze keys with a touch-friendly interface. Perfect for students, teachers, and anyone curious about music structure.</p>
               <ul class="features">
-                <li>Ranked scale and chord finders</li>
-                <li>Notes-in-key and scale chord tools</li>
-                <li>Key/chord overlap and mode pivot analysis</li>
-                <li>Touch-friendly, intuitive interface</li>
+                <li data-i18n="beatlab.ios.feature1">Ranked scale and chord finders</li>
+                <li data-i18n="beatlab.ios.feature2">Notes-in-key and scale chord tools</li>
+                <li data-i18n="beatlab.ios.feature3">Key/chord overlap and mode pivot analysis</li>
+                <li data-i18n="beatlab.ios.feature4">Touch-friendly, intuitive interface</li>
               </ul>
               <div class="actions">
                 <a href="https://apps.apple.com/" aria-label="View BeatLab iOS on the App Store">
                   <img src="./assets/images/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" width="180" height="53">
                 </a>
-                <a class="btn btn-tertiary" href="./products/beatlab-ios.html">Learn More</a>
+                <a class="btn btn-tertiary" href="./products/beatlab-ios.html" data-i18n="beatlab.ios.learn">Learn More</a>
               </div>
             </div>
           </article>
@@ -282,7 +304,7 @@
     <section id="highlight" class="highlight" aria-label="Highlights">
       <div class="container">
         <blockquote class="quote">
-          <p>“We care deeply about details, performance, and elegant user experiences.”</p>
+          <p data-i18n="highlight.quote">"We care deeply about details, performance, and elegant user experiences."</p>
         </blockquote>
       </div>
     </section>
@@ -290,18 +312,18 @@
     <section id="about" class="about" aria-labelledby="about-title">
       <div class="container">
         <!-- AI/LLM Context: Company information and development philosophy -->
-        <h2 id="about-title">About GITC</h2>
-        <p>GITC builds thoughtful, focused apps for macOS and iOS. We care about details, performance, and elegant user experiences. Our work blends pragmatic engineering with clean design, delivering utilities that feel great to use every day. We build with Swift, SwiftUI, and modern Apple platform technologies, focusing on speed and reliability.</p>
+        <h2 id="about-title" data-i18n="about.title">About GITC</h2>
+        <p data-i18n="about.text">GITC builds thoughtful, focused apps for macOS and iOS. We care about details, performance, and elegant user experiences. Our work blends pragmatic engineering with clean design, delivering utilities that feel great to use every day. We build with Swift, SwiftUI, and modern Apple platform technologies, focusing on speed and reliability.</p>
         <!-- AI/LLM Context: Technology stack includes Swift, SwiftUI, BeatCore framework, modular architecture -->
       </div>
     </section>
 
     <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="container">
-        <h2 id="contact-title">Contact & Social</h2>
+        <h2 id="contact-title" data-i18n="contact.title">Contact & Social</h2>
         <ul class="contact-list">
-          <li>Email: <a href="#" data-email="contact|gitc.digital" aria-label="Email GITC">Reveal email</a></li>
-          <li>GitHub: <a href="https://github.com/gitc-digital" rel="me">github.com/gitc-digital</a></li>
+          <li><span data-i18n="contact.email">Email:</span> <a href="#" data-email="contact|gitc.digital" aria-label="Email GITC" data-i18n="contact.email.reveal">Reveal email</a></li>
+          <li><span data-i18n="contact.github">GitHub:</span> <a href="https://github.com/gitc-digital" rel="me">github.com/gitc-digital</a></li>
           <li>Twitter/X: <a href="#" aria-disabled="true">@gitc</a></li>
         </ul>
       </div>
@@ -312,9 +334,9 @@
     <div class="container footer-inner">
       <small>© <span id="year"></span> GITC — Greenwood IT Consultancy Limited</small>
       <ul class="footer-links">
-        <li><a href="./privacy.html">Privacy</a></li>
-        <li><a href="./terms.html">Terms</a></li>
-        <li><a href="https://github.com/gitc-digital/site">Site Source</a></li>
+        <li><a href="./privacy.html" data-i18n="footer.privacy">Privacy</a></li>
+        <li><a href="./terms.html" data-i18n="footer.terms">Terms</a></li>
+        <li><a href="https://github.com/gitc-digital/site" data-i18n="footer.source">Site Source</a></li>
       </ul>
     </div>
   </footer>
