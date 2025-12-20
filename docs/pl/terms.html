@@ -8,22 +8,24 @@
   <link rel="canonical" href="https://gitc.digital/pl/terms.html" />
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script defer src="../assets/js/main.js"></script>
   <!-- hreflang alternates -->
-  <link rel="alternate" hreflang="en" href="https://gitc.digital/terms.html" />
-  <link rel="alternate" hreflang="es" href="https://gitc.digital/es/terms.html" />
-  <link rel="alternate" hreflang="de" href="https://gitc.digital/de/terms.html" />
-  <link rel="alternate" hreflang="fr" href="https://gitc.digital/fr/terms.html" />
-  <link rel="alternate" hreflang="ja" href="https://gitc.digital/ja/terms.html" />
-  <link rel="alternate" hreflang="ko" href="https://gitc.digital/ko/terms.html" />
+  <link rel="alternate" hreflang="en" href="https://gitc.digital/en/terms.html" />
   <link rel="alternate" hreflang="pl" href="https://gitc.digital/pl/terms.html" />
-  <link rel="alternate" hreflang="pt-PT" href="https://gitc.digital/ptpt/terms.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://gitc.digital/ptbr/terms.html" />
-  <link rel="alternate" hreflang="x-default" href="https://gitc.digital/terms.html" />
+  <link rel="alternate" hreflang="x-default" href="https://gitc.digital/en/terms.html" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="../">GITC</a>
+			<a class="logo" href="./" aria-label="GITC home">GITC</a>
+      <div class="language-selector">
+        <button class="language-btn" aria-label="Zmień język" title="Zmień język">🌍</button>
+        <div class="language-dropdown">
+          <a class="language-option" href="../en/terms.html" lang="en">English</a>
+          <a class="language-option" href="./terms.html" lang="pl">Polski</a>
+        </div>
+      </div>
+      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme"></button>
     </div>
   </header>
   <main class="container">
@@ -35,8 +37,5 @@
       <small>© <span id="year"></span> GITC — Greenwood IT Consultancy Limited</small>
     </div>
   </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

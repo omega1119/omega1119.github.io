@@ -41,18 +41,12 @@
 
 	<link rel="icon" type="image/svg+xml" href="../favicon.svg">
 	<link rel="stylesheet" href="../assets/css/styles.css" />
+	<script defer src="../assets/js/main.js"></script>
 
 	<!-- Hreflang alternates -->
-	<link rel="alternate" hreflang="en" href="https://gitc.digital/" />
-	<link rel="alternate" hreflang="es" href="https://gitc.digital/es/" />
-	<link rel="alternate" hreflang="de" href="https://gitc.digital/de/" />
-	<link rel="alternate" hreflang="fr" href="https://gitc.digital/fr/" />
-	<link rel="alternate" hreflang="ja" href="https://gitc.digital/ja/" />
-	<link rel="alternate" hreflang="ko" href="https://gitc.digital/ko/" />
+	<link rel="alternate" hreflang="en" href="https://gitc.digital/en/" />
 	<link rel="alternate" hreflang="pl" href="https://gitc.digital/pl/" />
-	<link rel="alternate" hreflang="pt-PT" href="https://gitc.digital/ptpt/" />
-	<link rel="alternate" hreflang="pt-BR" href="https://gitc.digital/ptbr/" />
-	<link rel="alternate" hreflang="x-default" href="https://gitc.digital/" />
+	<link rel="alternate" hreflang="x-default" href="https://gitc.digital/en/" />
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
@@ -85,7 +79,7 @@
 				"operatingSystem": "macOS",
 				"applicationCategory": "MusicApplication",
 				"description": "Narzędzia rytmu w pasku menu z tap tempo, analizą MIDI i narzędziami czasu dla muzyków",
-				"url": "https://gitc.digital/products/beatbar.html",
+				"url": "https://gitc.digital/pl/products/beatbar.html",
 				"offers": {
 					"@type": "Offer",
 					"price": "0",
@@ -99,7 +93,7 @@
 				"operatingSystem": "iOS",
 				"applicationCategory": "MusicApplication",
 				"description": "Przenośne narzędzia czasu z tap tempo i konwersją BPM dla iPhone’a",
-				"url": "https://gitc.digital/products/beatbar-pocket.html",
+				"url": "https://gitc.digital/pl/products/beatbar-pocket.html",
 				"offers": {
 					"@type": "Offer",
 					"price": "0",
@@ -113,7 +107,7 @@
 				"operatingSystem": "macOS",
 				"applicationCategory": "MusicApplication",
 				"description": "Zaawansowana pracownia teorii muzyki z wyszukiwaniem skal i akordów dla kompozytorów",
-				"url": "https://gitc.digital/products/beatlab.html",
+				"url": "https://gitc.digital/pl/products/beatlab.html",
 				"offers": {
 					"@type": "Offer",
 					"price": "0",
@@ -127,7 +121,7 @@
 				"operatingSystem": "iOS",
 				"applicationCategory": "MusicApplication",
 				"description": "Mobilne narzędzia teorii muzyki dla studentów i edukatorów na iPhone i iPad",
-				"url": "https://gitc.digital/products/beatlab-ios.html",
+				"url": "https://gitc.digital/pl/products/beatlab-ios.html",
 				"offers": {
 					"@type": "Offer",
 					"price": "0",
@@ -141,16 +135,23 @@
 <body>
 	<header class="site-header" role="banner">
 		<div class="container header-inner">
-			<a class="logo" href="../" aria-label="GITC home">GITC</a>
+			<a class="logo" href="./" aria-label="GITC home">GITC</a>
 			<nav class="nav" role="navigation" aria-label="Primary">
 				<button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
 				<ul id="primary-menu" class="nav-list">
 					<li><a href="#products">Produkty</a></li>
 					<li><a href="#about">O nas</a></li>
-					<li><a href="../" aria-disabled="true">Blog/Docs</a></li>
 					<li><a href="#contact">Kontakt</a></li>
 				</ul>
 			</nav>
+			<div class="language-selector">
+				<button class="language-btn" aria-label="Zmień język" title="Zmień język">🌍</button>
+				<div class="language-dropdown">
+					<a class="language-option" href="../en/" lang="en">English</a>
+					<a class="language-option" href="./" lang="pl">Polski</a>
+				</div>
+			</div>
+			<button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme"></button>
 		</div>
 	</header>
 
@@ -188,9 +189,9 @@
 							</ul>
 							<div class="actions">
 								<a href="https://apps.apple.com/" aria-label="BeatBar w Mac App Store">
-									<img data-badge="macos" src="../assets/images/Download-on-the-Mac-App-Store/PL/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_PL_RGB_blk_092917.svg" alt="Pobierz w Mac App Store" width="180" height="53">
+									<img src="../assets/images/Download-on-the-Mac-App-Store/PL/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_PL_RGB_blk_100317.svg" alt="Pobierz w Mac App Store" width="180" height="53">
 								</a>
-								<a class="btn btn-tertiary" href="../products/beatbar.html">Dowiedz się więcej</a>
+								<a class="btn btn-tertiary" href="./products/beatbar.html">Dowiedz się więcej</a>
 							</div>
 						</div>
 					</article>
@@ -212,9 +213,12 @@
 							</ul>
 							<div class="actions">
 								<a href="https://apps.apple.com/" aria-label="BeatBar Pocket w App Store">
-									<img data-badge="ios" src="../assets/images/Download-on-the-App-Store/PL/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_PL_RGB_blk_092917.svg" alt="Pobierz w App Store" width="180" height="53">
+									<picture>
+										<source srcset="../assets/images/Download-on-the-App-Store/PL/Download_on_App_Store/White_lockup/SVG/Download_on_the_App_Store_Badge_PL_RGB_wht_100317.svg" data-theme="dark">
+										<img src="../assets/images/Download-on-the-App-Store/PL/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_PL_RGB_blk_100317.svg" alt="Pobierz w App Store" width="180" height="53">
+									</picture>
 								</a>
-								<a class="btn btn-tertiary" href="../products/beatbar-pocket.html">Dowiedz się więcej</a>
+								<a class="btn btn-tertiary" href="./products/beatbar-pocket.html">Dowiedz się więcej</a>
 							</div>
 						</div>
 					</article>
@@ -236,9 +240,12 @@
 							</ul>
 							<div class="actions">
 								<a href="https://apps.apple.com/" aria-label="BeatLab w Mac App Store">
-									<img data-badge="macos" src="../assets/images/Download-on-the-Mac-App-Store/PL/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_PL_RGB_blk_092917.svg" alt="Pobierz w Mac App Store" width="180" height="53">
+									<picture>
+										<source srcset="../assets/images/Download-on-the-Mac-App-Store/PL/Download_on_Mac_App_Store/White_lockup/SVG/Download_on_the_Mac_App_Store_Badge_PL_RGB_wht_100317.svg" data-theme="dark">
+										<img src="../assets/images/Download-on-the-Mac-App-Store/PL/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_PL_RGB_blk_100317.svg" alt="Pobierz w Mac App Store" width="180" height="53">
+									</picture>
 								</a>
-								<a class="btn btn-tertiary" href="../products/beatlab.html">Dowiedz się więcej</a>
+								<a class="btn btn-tertiary" href="./products/beatlab.html">Dowiedz się więcej</a>
 							</div>
 						</div>
 					</article>
@@ -260,9 +267,12 @@
 							</ul>
 							<div class="actions">
 								<a href="https://apps.apple.com/" aria-label="BeatLab iOS w App Store">
-									<img data-badge="ios" src="../assets/images/Download-on-the-App-Store/PL/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_PL_RGB_blk_092917.svg" alt="Pobierz w App Store" width="180" height="53">
+									<picture>
+										<source srcset="../assets/images/Download-on-the-App-Store/PL/Download_on_App_Store/White_lockup/SVG/Download_on_the_App_Store_Badge_PL_RGB_wht_100317.svg" data-theme="dark">
+										<img src="../assets/images/Download-on-the-App-Store/PL/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_PL_RGB_blk_100317.svg" alt="Pobierz w App Store" width="180" height="53">
+									</picture>
 								</a>
-								<a class="btn btn-tertiary" href="../products/beatlab-ios.html">Dowiedz się więcej</a>
+								<a class="btn btn-tertiary" href="./products/beatlab-ios.html">Dowiedz się więcej</a>
 							</div>
 						</div>
 					</article>
@@ -301,25 +311,11 @@
 		<div class="container footer-inner">
 			<small>© <span id="year"></span> GITC — Greenwood IT Consultancy Limited</small>
 			<ul class="footer-links">
-				<li><a href="../privacy.html">Prywatność</a></li>
-				<li><a href="../terms.html">Warunki</a></li>
+				<li><a href="./privacy.html">Prywatność</a></li>
+				<li><a href="./terms.html">Warunki</a></li>
 				<li><a href="https://github.com/gitc-digital/site">Kod Źródłowy</a></li>
 			</ul>
 		</div>
 	</footer>
-	<script>
-		// Email obfuscation
-		document.getElementById('year').textContent = new Date().getFullYear();
-		document.querySelectorAll('[data-email]').forEach(a => {
-			a.addEventListener('click', (e) => {
-				e.preventDefault();
-				const val = a.getAttribute('data-email');
-				const [user, domain] = val.split('|');
-				const mailto = `mailto:${user}@${domain}`;
-				a.textContent = `${user}@${domain}`;
-				a.setAttribute('href', mailto);
-			});
-		});
-	</script>
 </body>
 </html>

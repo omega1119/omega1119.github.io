@@ -12,17 +12,34 @@ cd "/repos/omega1119.github.io/docs"
 python3 -m http.server 8080
 ```
 
+Alternative (serve the repo root):
+```zsh
+cd "/repos/omega1119.github.io"
+python3 -m http.server 8080
+```
+
 ## Open in the browser
-- Visit: `http://localhost:8080/`
-- English landing: `http://localhost:8080/`
-- Polish: `http://localhost:8080/pl/`
+- If you served the `docs/` folder (recommended):
+  - Visit: `http://localhost:8080/`
+  - English landing: `http://localhost:8080/`
+  - Polish: `http://localhost:8080/pl/`
+
+- If you served the repo root instead:
+  - Visit: `http://localhost:8080/docs/`
+  - English landing: `http://localhost:8080/docs/en/`
+  - Polish: `http://localhost:8080/docs/pl/`
 - Portuguese (Portugal): `http://localhost:8080/ptpt/`
 - Portuguese (Brazil): `http://localhost:8080/ptbr/`
 - Product pages:
-  - BeatBar (macOS): `http://localhost:8080/products/beatbar.html`
-  - BeatBar Pocket (iOS): `http://localhost:8080/products/beatbar-pocket.html`
-  - BeatLab (macOS): `http://localhost:8080/products/beatlab.html`
-  - BeatLab iOS: `http://localhost:8080/products/beatlab-ios.html`
+  - (docs served) BeatBar (macOS): `http://localhost:8080/products/beatbar.html`
+  - (docs served) BeatBar Pocket (iOS): `http://localhost:8080/products/beatbar-pocket.html`
+  - (docs served) BeatLab (macOS): `http://localhost:8080/products/beatlab.html`
+  - (docs served) BeatLab iOS: `http://localhost:8080/products/beatlab-ios.html`
+
+  - (repo root served) BeatBar (macOS): `http://localhost:8080/docs/products/beatbar.html`
+  - (repo root served) BeatBar Pocket (iOS): `http://localhost:8080/docs/products/beatbar-pocket.html`
+  - (repo root served) BeatLab (macOS): `http://localhost:8080/docs/products/beatlab.html`
+  - (repo root served) BeatLab iOS: `http://localhost:8080/docs/products/beatlab-ios.html`
 
 ## Stop the server
 - Press `Ctrl+C` in the terminal.
