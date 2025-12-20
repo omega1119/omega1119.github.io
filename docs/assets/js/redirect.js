@@ -23,25 +23,16 @@
     return 'en';
   }
 
-  function safeGetSessionStorage(key) {
-    try {
-      return sessionStorage.getItem(key);
-    } catch (e) {
-      return null;
-    }
-  }
-
-  function safeSetSessionStorage(key, value) {
-    try {
-      sessionStorage.setItem(key, value);
-    } catch (e) {
-      // ignore
-    }
-  }
-
   function redirectTo(target) {
     var suffix = (location.search || '') + (location.hash || '');
     window.location.replace(String(target) + suffix);
+  }
+
+  function findConfigScript() {
+    // Prefer currentScript, but fall back for browsers where it can be null.
+    var s = document.currentScript;
+    if (s && s.dataset && (s.dataset.redirectEn || s.dataset.redirectPl)) return s;
+    return document.querySelector('script[data-redirect-en], script[data-redirect-pl]');
   }
 
   function getTargetsFromScript(scriptEl) {
@@ -50,7 +41,7 @@
       en: ds.redirectEn || 'en/',
       pl: ds.redirectPl || 'pl/',
       defaultLang: (ds.defaultLang || 'en').toLowerCase(),
-      countryTimeoutMs: Number(ds.countryTimeoutMs || 1200)
+      countryTimeoutMs: Number(ds.countryTimeoutMs || 2500)
     };
   }
 
@@ -59,7 +50,7 @@
   }
 
   function main() {
-    var scriptEl = document.currentScript;
+    var scriptEl = findConfigScript();
     var targets = getTargetsFromScript(scriptEl);
 
     // If we don't have explicit targets, do nothing.
@@ -70,18 +61,6 @@
     // Prefer explicit Polish locale immediately.
     if (preferred === 'pl' && targets.pl) {
       redirectTo(targets.pl);
-      return;
-    }
-
-    // Next: use cached country code (set once per browsing session).
-    var cachedCountry = safeGetSessionStorage('gitc_country_code');
-    if (cachedCountry) {
-      var cc = String(cachedCountry).toUpperCase();
-      if (cc === 'PL' && targets.pl) {
-        redirectTo(targets.pl);
-      } else {
-        redirectTo(targets.en || targets[targets.defaultLang]);
-      }
       return;
     }
 
@@ -103,7 +82,8 @@
         didRedirect = true;
         window.clearTimeout(timeoutId);
         var cc = String(text || '').trim().toUpperCase();
-        if (cc) safeSetSessionStorage('gitc_country_code', cc);
+        // Be defensive: ipapi can return error pages/strings when rate limited.
+        cc = /^[A-Z]{2}$/.test(cc) ? cc : '';
         if (cc === 'PL' && targets.pl) {
           redirectTo(targets.pl);
         } else {
