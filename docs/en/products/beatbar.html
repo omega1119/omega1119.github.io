@@ -13,20 +13,20 @@
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BeatBar for macOS — Menu Bar Rhythm Toolkit | GITC</title>
-  <meta name="description" content="BeatBar is a macOS menu bar app for musicians offering global tap tempo, MIDI chord/scale detection, timing math, and transposition helpers. Lightweight and always ready." />
-  <meta name="keywords" content="BeatBar, macOS menu bar app, tap tempo, BPM calculator, MIDI detection, chord detection, scale detection, timing calculator, swing analysis, transposition, music production, musician tools" />
+  <title>BeatBar for macOS — Desktop Timing Lab & Calculators | GITC</title>
+  <meta name="description" content="BeatBar is a macOS timing lab with tap tempo, BPM→ms/Hz tables, note↔frequency lookups, transpose/speed helpers, FM and LFO calculators, and a harmonic series explorer." />
+  <meta name="keywords" content="BeatBar, macOS timing tools, tap tempo, BPM to ms, BPM to Hz, note frequency, tuning, transpose, speed ratio, FM calculator, LFO rates, harmonic series, SwiftUI" />
   <meta name="author" content="GITC" />
   <meta name="robots" content="index, follow" />
 
   <!-- AI/LLM Optimization -->
   <meta name="ai:app_name" content="BeatBar" />
   <meta name="ai:platform" content="macOS" />
-  <meta name="ai:category" content="Music production, rhythm tools, MIDI utilities" />
-  <meta name="ai:primary_features" content="Global tap tempo, BPM calculator, MIDI chord detection, MIDI scale detection, timing math, swing analysis, transposition helpers, note conversion, global hotkeys" />
-  <meta name="ai:use_cases" content="Music production, live performance, practice sessions, tempo matching, chord analysis, scale identification, rhythmic calculations" />
-  <meta name="ai:technical_stack" content="Swift, BeatCore, BeatInput, BeatUI, BeatFeatures, BeatMacKit" />
-  <meta name="ai:deployment" content="Menu bar application, always accessible, lightweight footprint" />
+  <meta name="ai:category" content="Music production utilities, timing calculators" />
+  <meta name="ai:primary_features" content="Tap tempo, BPM→ms/Hz table, note↔frequency conversion, transpose/speed helpers, FM calculator, LFO rates, harmonic series" />
+  <meta name="ai:use_cases" content="Tempo matching, rhythmic conversions, synthesis math, quick theory-adjacent lookups, production workflow utilities" />
+  <meta name="ai:technical_stack" content="SwiftUI, CoreMIDI, modular Swift packages" />
+  <meta name="ai:deployment" content="Windowed macOS utility" />
 
   <link rel="canonical" href="https://gitc.digital/en/products/beatbar.html" />
 
@@ -45,7 +45,7 @@
     "name": "BeatBar",
     "operatingSystem": "macOS",
     "applicationCategory": "MusicApplication",
-    "description": "BeatBar is designed for musicians who value speed and precision. It sits in your menu bar, offering global tap tempo, timing and swing calculators, live chord and scale detection from MIDI, and transposition helpers.",
+    "description": "BeatBar is a desktop timing lab for fast, accurate conversions: tap tempo, BPM→ms/Hz tables, note↔frequency lookups, transpose/speed helpers, FM + LFO calculators, and a harmonic series explorer.",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -57,12 +57,13 @@
     },
     "screenshot": "https://gitc.digital/assets/images/Beat Bar-macOS-Default-1024x1024@1x.png",
     "featureList": [
-      "Global tap tempo and BPM calculator",
-      "MIDI chord/scale detection",
-      "Timing math and swing analysis",
-      "Transposition and note helpers",
-      "Minimal, distraction-free UI",
-      "Customizable global hotkeys"
+      "Tap tempo",
+      "BPM→ms/Hz table (straight/dotted/triplet)",
+      "Note↔frequency lookup (tuning-aware)",
+      "Transpose/speed helpers (interval, BPM, ratio)",
+      "FM calculator (ratio + pitch correction)",
+      "LFO rate calculator + reverse lookup",
+      "Harmonic series explorer"
     ]
   }
   </script>
@@ -88,21 +89,21 @@
       <img src="../../assets/images/Beat Bar-macOS-Default-1024x1024@1x.png" alt="BeatBar macOS app icon" width="128" height="128" style="margin-bottom: 20px;" />
     </picture>
 
-    <h1>BeatBar for macOS: Menu Bar Rhythm Toolkit</h1>
-    <p>BeatBar is designed for musicians who value speed and precision. It sits in your menu bar, offering global tap tempo, timing and swing calculators, live chord and scale detection from MIDI, and transposition helpers.</p>
+    <h1>BeatBar for macOS: Desktop Timing Lab &amp; Calculators</h1>
+    <p>BeatBar is a desktop timing lab for fast, accurate conversions: tap tempo, BPM→ms/Hz tables, note↔frequency lookups, transpose/speed helpers, FM + LFO calculators, and a harmonic series explorer.</p>
 
     <h2>Features</h2>
     <ul>
-      <li>Global tap tempo and BPM calculator</li>
-      <li>MIDI chord/scale detection</li>
-      <li>Timing math and swing analysis</li>
-      <li>Transposition and note helpers</li>
-      <li>Minimal, distraction-free UI</li>
-      <li>Customizable global hotkeys</li>
-      <li>Built on modular Swift Packages (BeatCore, BeatInput, BeatUI, BeatFeatures, BeatMacKit)</li>
+      <li><strong>Tap Tempo:</strong> instant and averaged BPM from taps, with optional shared BPM binding across tabs</li>
+      <li><strong>BPM → ms / Hz:</strong> straight/dotted/triplet values from whole to 16th notes, shown as ms + repetition rate</li>
+      <li><strong>Note ↔ Frequency:</strong> per-octave table with MIDI number, Hz, period (ms), and samples at 44.1/48k; tuning is configurable</li>
+      <li><strong>Transpose / Speed:</strong> key transpose + cents + speed slider expressed in semitones; outputs interval name, resulting BPM, and ratio</li>
+      <li><strong>FM Calculator:</strong> ratio mode + pitch-correction mode, with sidebands and harmonicity hints</li>
+      <li><strong>LFO Rates:</strong> tempo divisions to Hz/period/samples (48k), plus reverse lookup from custom Hz</li>
+      <li><strong>Harmonic Series:</strong> first 32 harmonics with nearest note, cents offset, and interval labels</li>
     </ul>
 
-    <p>BeatBar is lightweight, immediate, and always ready—so you can focus on your music.</p>
+    <p>BeatBar is built with SwiftUI and CoreMIDI, with reusable logic shared across the BeatBar Suite via modular Swift packages.</p>
 
     <p>
       <a href="https://apps.apple.com/" aria-label="View BeatBar on the Mac App Store">
