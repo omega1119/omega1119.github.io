@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BeatBar Pocket na iOS — Narzędzia tempa | GITC</title>
-  <meta name="description" content="BeatBar Pocket to aplikacja na iOS z tap tempo, konwersją BPM, konwersją wartości nut oraz podręcznymi narzędziami timingowymi." />
-  <meta name="keywords" content="BeatBar Pocket, iOS, tap tempo, BPM, wartości nut, kalkulator częstotliwości, transpozycja, narzędzia muzyka" />
+  <title>BeatBar Pocket na iOS — Kieszonkowe narzędzia tempa i kalkulatory | GITC</title>
+  <meta name="description" content="BeatBar Pocket to kieszonkowe narzędzia tempa na iOS z tymi samymi kalkulatorami co BeatBar: tap tempo, BPM→ms/Hz, nuta↔częstotliwość, transpozycja/prędkość, kalkulatory FM + LFO oraz szereg harmoniczny." />
+  <meta name="keywords" content="BeatBar Pocket, iOS, narzędzia tempa, tap tempo, BPM na ms, BPM na Hz, częstotliwość nut, transpozycja, ratio prędkości, kalkulator FM, tempo LFO, szereg harmoniczny, SwiftUI" />
   <meta name="author" content="GITC" />
   <meta name="robots" content="index, follow" />
 
@@ -41,14 +41,17 @@
     </picture>
 
     <h1>BeatBar Pocket na iOS</h1>
-    <p>BeatBar Pocket przenosi narzędzia tempa i timingu na iPhone’a. Szybko policz BPM, przelicz wartości nut i ustaw transpozycję gdziekolwiek jesteś.</p>
+    <p>BeatBar Pocket to kieszonkowy zestaw narzędzi tempa z tymi samymi kalkulatorami co BeatBar, zaprojektowany do szybkich konwersji na iPhonie i iPadzie.</p>
 
     <h2>Funkcje</h2>
     <ul>
-      <li>Tap tempo oraz konwersja BPM↔ms dla wartości nut</li>
-      <li>Kalkulator nuta↔częstotliwość (z uwzględnieniem strojenia A4)</li>
-      <li>Narzędzia transpozycji i tempa</li>
-      <li>Szybki dostęp dzięki widgetom</li>
+      <li><strong>Narzędzia:</strong> Tap tempo, BPM→ms/Hz, Nuta↔Hz, Transpozycja/Prędkość, Kalkulator FM, Tempo LFO, Szereg harmoniczny</li>
+      <li><strong>Tap tempo:</strong> natychmiastowe i uśredniane BPM ze stuknięć, z opcjonalnym współdzieleniem BPM między narzędziami</li>
+      <li><strong>BPM → ms / Hz:</strong> wartości proste/kropkowane/triolowe od całych do szesnastek, pokazane jako ms i częstotliwość powtórzeń</li>
+      <li><strong>Nuta ↔ Częstotliwość:</strong> tabela per oktawa z numerem MIDI, Hz, okresem (ms) i próbkami dla 44.1/48k; strojenie jest konfigurowalne</li>
+      <li><strong>Transpozycja / Prędkość:</strong> tonacja źródłowa/docelowa, centy i suwak prędkości w półtonach; wynik to nazwa interwału, BPM i ratio</li>
+      <li><strong>FM + LFO:</strong> tryby FM (ratio i korekcja wysokości) oraz tempo‑synch LFO z wyszukiwaniem najbliższego podziału</li>
+      <li><strong>Szereg harmoniczny:</strong> pierwsze 32 harmoniczne z najbliższą nutą, odchyłką w centach i etykietami interwałów</li>
     </ul>
 
     <p>

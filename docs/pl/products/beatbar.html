@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BeatBar na macOS — Zestaw narzędzi rytmu | GITC</title>
-  <meta name="description" content="BeatBar to aplikacja w pasku menu na macOS: tap tempo, detekcja akordów i skal z MIDI, kalkulatory timingu oraz narzędzia transpozycji." />
-  <meta name="keywords" content="BeatBar, macOS, aplikacja w pasku menu, tap tempo, BPM, MIDI, akordy, skale, timing, swing, transpozycja" />
+  <title>BeatBar na macOS — Desktopowe laboratorium tempa i kalkulatory | GITC</title>
+  <meta name="description" content="BeatBar to laboratorium tempa na macOS: tap tempo, tabela BPM→ms/Hz, konwersje nuta↔częstotliwość, transpozycja/prędkość, kalkulatory FM i LFO oraz szereg harmoniczny." />
+  <meta name="keywords" content="BeatBar, macOS, narzędzia tempa, tap tempo, BPM na ms, BPM na Hz, częstotliwość nut, strojenie, transpozycja, ratio prędkości, kalkulator FM, tempo LFO, szereg harmoniczny, SwiftUI" />
   <meta name="author" content="GITC" />
   <meta name="robots" content="index, follow" />
 
@@ -40,18 +40,21 @@
       <img src="../../assets/images/Beat Bar-macOS-Default-1024x1024@1x.png" alt="Ikona aplikacji BeatBar (macOS)" width="128" height="128" style="margin-bottom: 20px;" />
     </picture>
 
-    <h1>BeatBar na macOS: narzędzia rytmu w pasku menu</h1>
-    <p>BeatBar jest dla muzyków ceniących szybkość i precyzję. Działa w pasku menu: tap tempo, kalkulatory timingu i swingu, detekcja akordów i skal z MIDI oraz narzędzia transpozycji.</p>
+    <h1>BeatBar na macOS: desktopowe laboratorium tempa i kalkulatory</h1>
+    <p>BeatBar to desktopowe laboratorium do szybkich i dokładnych konwersji: tap tempo, tabela BPM→ms/Hz, konwersje nuta↔częstotliwość, transpozycja/prędkość, kalkulatory FM + LFO oraz eksplorator szeregu harmonicznego.</p>
 
     <h2>Funkcje</h2>
     <ul>
-      <li>Globalne tap tempo i kalkulator BPM</li>
-      <li>Detekcja akordów i skal z MIDI</li>
-      <li>Kalkulatory timingu i analizy swingu</li>
-      <li>Narzędzia transpozycji i pomocniki nut</li>
-      <li>Minimalny, nie rozpraszający interfejs</li>
-      <li>Konfigurowalne globalne skróty klawiszowe</li>
+      <li><strong>Tap tempo:</strong> natychmiastowe i uśredniane BPM ze stuknięć, z opcjonalnym współdzieleniem BPM między narzędziami</li>
+      <li><strong>BPM → ms / Hz:</strong> wartości proste/kropkowane/triolowe od całych do szesnastek, pokazane jako ms i częstotliwość powtórzeń</li>
+      <li><strong>Nuta ↔ Częstotliwość:</strong> tabela per oktawa z numerem MIDI, Hz, okresem (ms) i próbkami dla 44.1/48k; strojenie jest konfigurowalne</li>
+      <li><strong>Transpozycja / Prędkość:</strong> tonacja źródłowa/docelowa, centy i suwak prędkości w półtonach; wynik to nazwa interwału, BPM i ratio</li>
+      <li><strong>Kalkulator FM:</strong> tryb ratio i tryb korekcji wysokości, z listą wstęg bocznych i podpowiedzią harmoniczności</li>
+      <li><strong>Tempo LFO:</strong> podziały tempa do Hz/okresu/próbek (48k) oraz wyszukiwanie najbliższego podziału dla podanej częstotliwości</li>
+      <li><strong>Szereg harmoniczny:</strong> pierwsze 32 harmoniczne z najbliższą nutą, odchyłką w centach i etykietami interwałów</li>
     </ul>
+
+    <p>BeatBar jest zbudowany w SwiftUI i korzysta z współdzielonej logiki w modularnych paczkach Swift używanych w całym BeatBar Suite.</p>
 
     <p>
       <a href="https://apps.apple.com/" aria-label="Zobacz BeatBar w Mac App Store">
