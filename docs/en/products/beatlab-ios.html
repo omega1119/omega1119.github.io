@@ -12,7 +12,7 @@
   </script>
 
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width" />
   <title>BeatLab for iOS — Touch‑First Theory Lab | GITC</title>
   <meta name="description" content="BeatLab iOS is a touch-first theory lab for iPhone/iPad: chord/scale detection, diatonic harmony tools, shared notes/chords, mode pivots, borrowed chords, and interactive circles of fifths/thirds." />
   <meta name="keywords" content="BeatLab iOS, iPhone music theory, iPad music theory, chord detection, scale detection, diatonic harmony, mode pivots, borrowed chords, circle of fifths, circle of thirds, SwiftUI, CoreMIDI" />
@@ -44,30 +44,171 @@
     </div>
   </header>
 
-  <main class="container" style="padding:40px 0">
-    <picture>
-      <source srcset="../../assets/images/Beat Lab-iOS-Dark-1024x1024@1x.png" data-theme="dark">
-      <img src="../../assets/images/Beat Lab-iOS-Default-1024x1024@1x.png" alt="BeatLab iOS app icon" width="128" height="128" style="margin-bottom: 20px;" />
-    </picture>
+  <main class="container product-page">
+    <div class="product-hero">
+      <div class="product-hero__copy">
+        <picture>
+          <source srcset="../../assets/images/Beat Lab-iOS-Dark-1024x1024@1x.png" data-theme="dark">
+          <img src="../../assets/images/Beat Lab-iOS-Default-1024x1024@1x.png" alt="BeatLab iOS app icon" width="128" height="128" class="product-hero__icon" />
+        </picture>
 
-    <h1>BeatLab for iOS</h1>
-    <p>BeatLab iOS brings BeatLab’s detection, harmony generators, pivots/borrows, and interactive circles to iPhone and iPad with a touch-first interface.</p>
+        <h1>BeatLab iOS for iOS</h1>
+        <p class="product-lead">A touch-first theory lab for iPhone and iPad with chord/scale detection, harmony tools, and interactive circles.</p>
 
-    <h2>Features</h2>
-    <ul>
-      <li><strong>Tools:</strong> Scale/Chord Finder, Notes in Key, Scale Chords, Shared Notes, Shared Chords, Mode Pivots, Borrowed Chords, Circle of Fifths, Circle of Thirds</li>
-      <li><strong>Scale + Chord Finder:</strong> live MIDI + on-screen keyboard intake with chord (or dyad) detection and ranked scale coverage</li>
-      <li><strong>Notes in Key / Scale Chords:</strong> spelled tones plus diatonic triads/sevenths with inversion/extension controls</li>
-      <li><strong>Shared Notes / Shared Chords:</strong> compare two keys/scales and visualize overlap vs distinct tones</li>
-      <li><strong>Mode Pivots + Borrowed Chords:</strong> pivot-friendly chords and parallel-mode borrowing options</li>
-      <li><strong>Circles:</strong> interactive Circle of Fifths + Circle of Thirds (chromatic mediants)</li>
-    </ul>
+        <ul class="product-highlights">
+          <li>Scale/Chord Finder with MIDI + touch keyboard</li>
+          <li>Notes in Key, Scale Chords, Shared Notes/Chords</li>
+          <li>Mode Pivots + Borrowed Chords</li>
+          <li>Interactive Circle of Fifths + Circle of Thirds</li>
+        </ul>
 
-    <p>
-      <a href="https://apps.apple.com/" aria-label="View BeatLab iOS on the App Store">
-        <img src="../../assets/images/Download-on-the-App-Store/US/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" data-theme-src-light="../../assets/images/Download-on-the-App-Store/US/Download_on_App_Store/White_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg" data-theme-src-dark="../../assets/images/Download-on-the-App-Store/US/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" width="180" height="53">
-      </a>
-    </p>
+        <div class="product-cta">
+          <a href="https://apps.apple.com/" aria-label="View BeatLab iOS on the App Store">
+            <img src="../../assets/images/Download-on-the-App-Store/US/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" data-theme-src-light="../../assets/images/Download-on-the-App-Store/US/Download_on_App_Store/White_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg" data-theme-src-dark="../../assets/images/Download-on-the-App-Store/US/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" width="180" height="53">
+          </a>
+        </div>
+      </div>
+
+      <div class="product-hero__shots" aria-label="BeatLab iOS screenshots">
+        <h2 class="product-shot-title">Screenshots</h2>
+        <p class="product-shot-lead">Includes light and dark screenshots that follow the website theme.</p>
+        <div class="screenshot-grid">
+          <figure class="device-shot device-shot--iphone">
+            <div class="device-shot__stage" aria-label="iPhone screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPhone 17 Pro - Deep Blue - Portrait.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLabiOS/en-US/iPhone 17 Pro-scaleChord-iphone-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLabiOS/en-US/iPhone 17 Pro-scaleChord-iphone-light.png" alt="Scale and Chord Finder on iPhone" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Scale + Chord Finder with live MIDI and touch keyboard.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--ipad">
+            <div class="device-shot__stage" aria-label="iPad screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPad Pro 11 - M4 - Space Gray - Landscape.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLabiOS/en-US/iPad Pro 11-inch (M5)-keyNotes-ipad-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLabiOS/en-US/iPad Pro 11-inch (M5)-keyNotes-ipad-light.png" alt="Notes in Key screen on iPad" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Notes in Key with spelled tones and in-key keyboard highlight.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--iphone">
+            <div class="device-shot__stage" aria-label="iPhone screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPhone 17 Pro - Deep Blue - Portrait.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLabiOS/en-US/iPhone 17 Pro-scaleChords-iphone-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLabiOS/en-US/iPhone 17 Pro-scaleChords-iphone-light.png" alt="Scale Chords screen on iPhone" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Scale Chords with diatonic triads/sevenths and voicings.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--ipad">
+            <div class="device-shot__stage" aria-label="iPad screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPad Pro 11 - M4 - Space Gray - Landscape.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLabiOS/en-US/iPad Pro 11-inch (M5)-sharedNotes-ipad-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLabiOS/en-US/iPad Pro 11-inch (M5)-sharedNotes-ipad-light.png" alt="Shared Notes screen on iPad" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Shared Notes comparing two keys with overlap visualization.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--iphone">
+            <div class="device-shot__stage" aria-label="iPhone screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPhone 17 Pro - Deep Blue - Portrait.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLabiOS/en-US/iPhone 17 Pro-sharedChords-iphone-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLabiOS/en-US/iPhone 17 Pro-sharedChords-iphone-light.png" alt="Shared Chords screen on iPhone" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Shared Chords for comparing two keys/scales.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--ipad">
+            <div class="device-shot__stage" aria-label="iPad screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPad Pro 11 - M4 - Space Gray - Landscape.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLabiOS/en-US/iPad Pro 11-inch (M5)-modePivots-ipad-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLabiOS/en-US/iPad Pro 11-inch (M5)-modePivots-ipad-light.png" alt="Mode Pivots screen on iPad" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Mode Pivots showing pivot-friendly chords across keys.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--iphone">
+            <div class="device-shot__stage" aria-label="iPhone screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPhone 17 Pro - Deep Blue - Portrait.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLabiOS/en-US/iPhone 17 Pro-borrowedChords-iphone-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLabiOS/en-US/iPhone 17 Pro-borrowedChords-iphone-light.png" alt="Borrowed Chords screen on iPhone" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Borrowed Chords from parallel modes.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--ipad">
+            <div class="device-shot__stage" aria-label="iPad screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPad Pro 11 - M4 - Space Gray - Landscape.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLabiOS/en-US/iPad Pro 11-inch (M5)-circleOfFifths-ipad-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLabiOS/en-US/iPad Pro 11-inch (M5)-circleOfFifths-ipad-light.png" alt="Circle of Fifths screen on iPad" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Interactive Circle of Fifths for modulation exploration.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--iphone">
+            <div class="device-shot__stage" aria-label="iPhone screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPhone 17 Pro - Deep Blue - Portrait.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLabiOS/en-US/iPhone 17 Pro-circleOfThirds-iphone-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLabiOS/en-US/iPhone 17 Pro-circleOfThirds-iphone-light.png" alt="Circle of Thirds screen on iPhone" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Circle of Thirds for chromatic mediant exploration.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <section class="product-section" aria-labelledby="features-title">
+      <h2 id="features-title">Features</h2>
+      <p>BeatLab iOS brings BeatLab's detection, harmony generators, pivots/borrows, and interactive circles to iPhone and iPad with a touch-first interface.</p>
+      <ul>
+        <li><strong>Built for iPhone/iPad:</strong> touch-first layout optimized for quick exploration and live use</li>
+        <li><strong>Scale + Chord Finder:</strong> live MIDI + on-screen keyboard intake with chord (or dyad) detection and ranked scale coverage</li>
+        <li><strong>Notes in Key:</strong> spelled scale tones and an in-key keyboard highlight</li>
+        <li><strong>Scale Chords:</strong> diatonic triads/sevenths per degree with inversion/extension controls and keyboard voicings</li>
+        <li><strong>Shared Notes:</strong> compare two keys/scales and visualize overlap vs distinct tones</li>
+        <li><strong>Shared Chords:</strong> compare diatonic chords between two keys/scales</li>
+        <li><strong>Mode Pivots:</strong> find other modes/keys that contain the selected chord (with optional category filtering)</li>
+        <li><strong>Borrowed Chords:</strong> borrowed options from parallel modes, grouped by source mode (triad/7th aware)</li>
+        <li><strong>Circle of Fifths:</strong> interactive circle for exploring key relationships and modulations</li>
+        <li><strong>Circle of Thirds:</strong> chromatic mediants for alternative modulation pathways</li>
+      </ul>
+    </section>
   </main>
 
   <footer class="site-footer"><div class="container footer-inner"><small>© <span id="year"></span> GITC</small></div></footer>
