@@ -12,16 +12,39 @@
       const img = picture.querySelector('img');
       if (!darkSource || !img) return;
 
+      // App Store / Mac App Store badges intentionally invert:
+      // - light theme => white badge
+      // - dark theme  => black badge
+      // Opt-in via `picture[data-picture="store-badge"]`.
+      const isStoreBadge = picture.getAttribute('data-picture') === 'store-badge'
+        || /\b(app store|mac app store)\b/i.test(img.getAttribute('alt') || '');
+
+      // Persist the light (default) and dark sources once.
       if (!img.hasAttribute('data-default-src')) {
-        img.setAttribute('data-default-src', img.currentSrc || img.src);
+        img.setAttribute('data-default-src', img.getAttribute('src') || '');
+      }
+      if (!darkSource.hasAttribute('data-dark-srcset')) {
+        darkSource.setAttribute('data-dark-srcset', darkSource.getAttribute('srcset') || '');
       }
 
-      if (theme === 'dark') {
-        const darkSrc = darkSource.getAttribute('srcset');
-        if (darkSrc) img.src = darkSrc;
+      const defaultSrc = img.getAttribute('data-default-src') || '';
+      const darkSrcset = darkSource.getAttribute('data-dark-srcset') || '';
+
+      // IMPORTANT: For <picture>, browsers prefer <source> over <img>.
+      // To make theme toggling reliable (including App Store badges), enable/disable
+      // the dark <source> via a media query.
+      const shouldEnableDarkSource = isStoreBadge ? theme === 'light' : theme === 'dark';
+
+      if (shouldEnableDarkSource) {
+        if (darkSrcset) darkSource.setAttribute('srcset', darkSrcset);
+        darkSource.setAttribute('media', 'all');
+
+        // Fallback for older browsers / edge cases.
+        if (darkSrcset) img.setAttribute('src', darkSrcset);
       } else {
-        const defaultSrc = img.getAttribute('data-default-src');
-        if (defaultSrc) img.src = defaultSrc;
+        // Disable the dark source so the <img> (light asset) wins.
+        darkSource.setAttribute('media', 'not all');
+        if (defaultSrc) img.setAttribute('src', defaultSrc);
       }
     });
   }
