@@ -7,17 +7,19 @@
 
   // Theme-aware <picture> swapping
   function updateThemeImages(theme) {
+    // First: explicit theme-src swapping (used for store badges).
+    document.querySelectorAll('img[data-theme-src-light][data-theme-src-dark]').forEach((img) => {
+      const lightSrc = img.getAttribute('data-theme-src-light') || '';
+      const darkSrc = img.getAttribute('data-theme-src-dark') || '';
+      const targetSrc = theme === 'light' ? lightSrc : darkSrc;
+      if (!targetSrc) return;
+      if (img.getAttribute('src') !== targetSrc) img.setAttribute('src', targetSrc);
+    });
+
     document.querySelectorAll('picture').forEach((picture) => {
       const darkSource = picture.querySelector('source[data-theme="dark"]');
       const img = picture.querySelector('img');
       if (!darkSource || !img) return;
-
-      // App Store / Mac App Store badges intentionally invert:
-      // - light theme => white badge
-      // - dark theme  => black badge
-      // Opt-in via `picture[data-picture="store-badge"]`.
-      const isStoreBadge = picture.getAttribute('data-picture') === 'store-badge'
-        || /\b(app store|mac app store)\b/i.test(img.getAttribute('alt') || '');
 
       // Persist the light (default) and dark sources once.
       if (!img.hasAttribute('data-default-src')) {
@@ -30,20 +32,16 @@
       const defaultSrc = img.getAttribute('data-default-src') || '';
       const darkSrcset = darkSource.getAttribute('data-dark-srcset') || '';
 
-      // IMPORTANT: For <picture>, browsers prefer <source> over <img>.
-      // To make theme toggling reliable (including App Store badges), enable/disable
-      // the dark <source> via a media query.
-      const shouldEnableDarkSource = isStoreBadge ? theme === 'light' : theme === 'dark';
+      const shouldEnableDarkSource = theme === 'dark';
 
       if (shouldEnableDarkSource) {
+        // Ensure the themed <source> is present, and also set <img> as a hard fallback.
         if (darkSrcset) darkSource.setAttribute('srcset', darkSrcset);
-        darkSource.setAttribute('media', 'all');
-
-        // Fallback for older browsers / edge cases.
         if (darkSrcset) img.setAttribute('src', darkSrcset);
       } else {
-        // Disable the dark source so the <img> (light asset) wins.
-        darkSource.setAttribute('media', 'not all');
+        // Disable the themed <source> so the <img> wins.
+        // Removing `srcset` tends to be more reliable than toggling `media`.
+        darkSource.removeAttribute('srcset');
         if (defaultSrc) img.setAttribute('src', defaultSrc);
       }
     });
