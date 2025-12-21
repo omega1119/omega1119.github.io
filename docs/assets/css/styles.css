@@ -413,3 +413,146 @@ img { max-width: 100%; height: auto; display: block }
     text-align: center;
   }
 }
+
+/* Product pages (scoped by .product-page) */
+.product-page {
+  padding: 40px 0;
+  /* Screenshot sizing knob: 0% = default. Increase to shrink screen; decrease to grow. */
+  --device-screen-scale: -3.2%;
+}
+
+.product-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.product-hero__icon {
+  margin-bottom: 20px;
+}
+
+.product-lead {
+  color: var(--muted);
+  margin: 12px 0 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.product-highlights {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 24px;
+}
+
+.product-highlights li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.product-highlights li:before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.product-cta img {
+  transition: opacity 0.2s ease;
+}
+
+.product-cta a:hover img {
+  opacity: 0.8;
+}
+
+.product-section {
+  margin-top: 60px;
+}
+
+.product-shot-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0 0 8px;
+}
+
+.product-shot-lead {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+.device-shot {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 18px;
+}
+
+.device-shot__stage {
+  position: relative;
+}
+
+.device-shot__bezel {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+
+.device-shot__screen {
+  position: absolute;
+  overflow: visible;
+  z-index: 1;
+}
+
+.device-shot__screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.device-shot figcaption {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Insets are best-effort; tune per bezel asset */
+.device-shot--iphone .device-shot__screen {
+  --screen-inset-y: 5.5%;
+  --screen-inset-x: 8.5%;
+  top: calc(var(--screen-inset-y) + var(--device-screen-scale));
+  bottom: calc(var(--screen-inset-y) + var(--device-screen-scale));
+  left: calc(var(--screen-inset-x) + var(--device-screen-scale));
+  right: calc(var(--screen-inset-x) + var(--device-screen-scale));
+}
+
+.device-shot--ipad .device-shot__screen {
+  --screen-inset-y: 7.5%;
+  --screen-inset-x: 6.5%;
+  top: calc(var(--screen-inset-y) + var(--device-screen-scale));
+  bottom: calc(var(--screen-inset-y) + var(--device-screen-scale));
+  left: calc(var(--screen-inset-x) + var(--device-screen-scale));
+  right: calc(var(--screen-inset-x) + var(--device-screen-scale));
+}
+
+@media (min-width: 900px) {
+  .product-hero {
+    grid-template-columns: 1fr 1.1fr;
+    gap: 56px;
+    align-items: center;
+  }
+}

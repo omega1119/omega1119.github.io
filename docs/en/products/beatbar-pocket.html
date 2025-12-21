@@ -12,7 +12,7 @@
   </script>
 
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width" />
   <title>BeatBar Pocket for iOS — Timing Toolkit & Calculators | GITC</title>
   <meta name="description" content="BeatBar Pocket is an iOS timing toolkit with the same calculators as BeatBar: tap tempo, BPM→ms/Hz, note↔frequency, transpose/speed helpers, FM + LFO calculators, and harmonic series." />
   <meta name="keywords" content="BeatBar Pocket, iOS timing tools, tap tempo, BPM to ms, BPM to Hz, note frequency, transpose, speed ratio, FM calculator, LFO rates, harmonic series, SwiftUI" />
@@ -44,31 +44,143 @@
     </div>
   </header>
 
-  <main class="container" style="padding:40px 0">
-    <picture>
-      <source srcset="../../assets/images/Beat Bar-iOS-Dark-1024x1024@1x.png" data-theme="dark">
-      <img src="../../assets/images/Beat Bar-iOS-Default-1024x1024@1x.png" alt="BeatBar Pocket iOS app icon" width="128" height="128" style="margin-bottom: 20px;" />
-    </picture>
+  <main class="container product-page">
+    <div class="product-hero">
+      <div class="product-hero__copy">
+        <picture>
+          <source srcset="../../assets/images/Beat Bar-iOS-Dark-1024x1024@1x.png" data-theme="dark">
+          <img src="../../assets/images/Beat Bar-iOS-Default-1024x1024@1x.png" alt="BeatBar Pocket iOS app icon" width="128" height="128" class="product-hero__icon" />
+        </picture>
 
-    <h1>BeatBar Pocket for iOS</h1>
-    <p>BeatBar Pocket is a pocket timing toolkit with the same calculators as BeatBar, designed for quick on-the-go conversions on iPhone and iPad.</p>
+        <h1>BeatBar Pocket for iOS</h1>
+        <p class="product-lead">A pocket timing toolkit with tap tempo and fast conversions for iPhone and iPad.</p>
 
-    <h2>Features</h2>
-    <ul>
-      <li><strong>Tools:</strong> Tap Tempo, BPM→ms/Hz, Note↔Hz, Transpose/Speed, FM Calculator, LFO Rates, Harmonic Series</li>
-      <li><strong>Tap Tempo:</strong> instant and averaged BPM from taps, with optional shared BPM binding across tabs</li>
-      <li><strong>BPM → ms / Hz:</strong> straight/dotted/triplet values from whole to 16th notes, shown as ms + repetition rate</li>
-      <li><strong>Note ↔ Frequency:</strong> per-octave table with MIDI number, Hz, period (ms), and samples at 44.1/48k; tuning is configurable</li>
-      <li><strong>Transpose / Speed:</strong> key transpose + cents + speed slider expressed in semitones; outputs interval name, resulting BPM, and ratio</li>
-      <li><strong>FM + LFO:</strong> FM ratio/pitch-correction modes, and tempo-synced LFO divisions with reverse lookup</li>
-      <li><strong>Harmonic Series:</strong> first 32 harmonics with nearest note, cents offset, and interval labels</li>
-    </ul>
+        <ul class="product-highlights">
+          <li>Tap Tempo + shared BPM binding</li>
+          <li>BPM → ms / Hz (straight/dotted/triplet)</li>
+          <li>Note ↔ Frequency (tuning-aware)</li>
+          <li>Transpose / Speed, FM + LFO, Harmonic series</li>
+        </ul>
 
-    <p>
-      <a href="https://apps.apple.com/" aria-label="View BeatBar Pocket on the App Store">
-        <img src="../../assets/images/Download-on-the-App-Store/US/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" data-theme-src-light="../../assets/images/Download-on-the-App-Store/US/Download_on_App_Store/White_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg" data-theme-src-dark="../../assets/images/Download-on-the-App-Store/US/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" width="180" height="53">
-      </a>
-    </p>
+        <div class="product-cta">
+          <a href="https://apps.apple.com/" aria-label="View BeatBar Pocket on the App Store">
+            <img src="../../assets/images/Download-on-the-App-Store/US/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" data-theme-src-light="../../assets/images/Download-on-the-App-Store/US/Download_on_App_Store/White_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg" data-theme-src-dark="../../assets/images/Download-on-the-App-Store/US/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" width="180" height="53">
+          </a>
+        </div>
+      </div>
+
+      <div class="product-hero__shots" aria-label="BeatBar Pocket screenshots">
+        <h2 class="product-shot-title">Screenshots</h2>
+        <p class="product-shot-lead">Includes light and dark screenshots that follow the website theme.</p>
+        <div class="screenshot-grid">
+          <figure class="device-shot device-shot--iphone">
+            <div class="device-shot__stage" aria-label="iPhone screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPhone 17 Pro - Deep Blue - Portrait.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatBarPocket/en-US/iPhone 17 Pro-tap-iphone-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatBarPocket/en-US/iPhone 17 Pro-tap-iphone-light.png" alt="Tap Tempo screen on iPhone" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Tap tempo with a clear readout and shared BPM.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--ipad">
+            <div class="device-shot__stage" aria-label="iPad screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPad Pro 11 - M4 - Space Gray - Landscape.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatBarPocket/en-US/iPad Pro 11-inch (M5)-bpm-ipad-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatBarPocket/en-US/iPad Pro 11-inch (M5)-bpm-ipad-light.png" alt="BPM to ms/Hz table on iPad" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>BPM → ms / Hz conversions with musical divisions.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--iphone">
+            <div class="device-shot__stage" aria-label="iPhone screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPhone 17 Pro - Deep Blue - Portrait.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatBarPocket/en-US/iPhone 17 Pro-noteHz-iphone-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatBarPocket/en-US/iPhone 17 Pro-noteHz-iphone-light.png" alt="Note to frequency screen on iPhone" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Note ↔ Frequency lookups with tuning support.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--ipad">
+            <div class="device-shot__stage" aria-label="iPad screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPad Pro 11 - M4 - Space Gray - Landscape.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatBarPocket/en-US/iPad Pro 11-inch (M5)-transpose-ipad-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatBarPocket/en-US/iPad Pro 11-inch (M5)-transpose-ipad-light.png" alt="Transpose and speed screen on iPad" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Transpose / Speed helpers with interval + ratio outputs.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--iphone">
+            <div class="device-shot__stage" aria-label="iPhone screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPhone 17 Pro - Deep Blue - Portrait.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatBarPocket/en-US/iPhone 17 Pro-fmCalc-iphone-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatBarPocket/en-US/iPhone 17 Pro-fmCalc-iphone-light.png" alt="FM calculator screen on iPhone" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>FM calculator with ratio and pitch-correction modes.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--ipad">
+            <div class="device-shot__stage" aria-label="iPad screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPad Pro 11 - M4 - Space Gray - Landscape.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatBarPocket/en-US/iPad Pro 11-inch (M5)-lfoRate-ipad-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatBarPocket/en-US/iPad Pro 11-inch (M5)-lfoRate-ipad-light.png" alt="LFO rate screen on iPad" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>LFO rates from tempo divisions, plus reverse lookup from Hz.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--iphone">
+            <div class="device-shot__stage" aria-label="iPhone screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/iPhone 17 Pro - Deep Blue - Portrait.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatBarPocket/en-US/iPhone 17 Pro-harmonics-iphone-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatBarPocket/en-US/iPhone 17 Pro-harmonics-iphone-light.png" alt="Harmonic series screen on iPhone" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Harmonic series explorer with nearest notes and interval labels.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <section class="product-section" aria-labelledby="features-title">
+      <h2 id="features-title">Features</h2>
+      <p>BeatBar Pocket shares the same calculator core as BeatBar, with a touch-first layout tuned for quick use during sessions, rehearsals, and travel.</p>
+      <ul>
+        <li><strong>Built for iPhone/iPad:</strong> touch-first layout with a liquid bottom tab bar, optimized for quick, one-handed checks</li>
+        <li><strong>Tap Tempo:</strong> instant and averaged BPM from taps, with an option to bind a shared BPM across tools</li>
+        <li><strong>BPM → ms / Hz Table:</strong> straight/dotted/triplet timing from whole notes to 16th notes, shown as milliseconds and repetition rate (Hz)</li>
+        <li><strong>Note ↔ Frequency Table:</strong> per-octave lookup with MIDI number, Hz, period (ms), and samples at 44.1k/48k; tuning is configurable</li>
+        <li><strong>Transpose / Speed:</strong> transpose and cents with a speed slider expressed in semitones; outputs interval name, resulting BPM, and ratio</li>
+        <li><strong>FM Calculator:</strong> ratio mode plus pitch-correction mode, with sidebands and harmonicity hints</li>
+        <li><strong>LFO Rates:</strong> tempo divisions to Hz/period/samples (48k), plus reverse lookup from a custom Hz value</li>
+        <li><strong>Harmonic Series:</strong> first 32 harmonics with nearest note, cents offset, and interval labels</li>
+      </ul>
+    </section>
   </main>
 
   <footer class="site-footer"><div class="container footer-inner"><small>© <span id="year"></span> GITC</small></div></footer>
