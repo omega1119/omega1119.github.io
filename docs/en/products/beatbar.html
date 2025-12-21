@@ -12,7 +12,7 @@
   </script>
 
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width" />
   <title>BeatBar for macOS — Desktop Timing Lab & Calculators | GITC</title>
   <meta name="description" content="BeatBar is a macOS timing lab with tap tempo, BPM→ms/Hz tables, note↔frequency lookups, transpose/speed helpers, FM and LFO calculators, and a harmonic series explorer." />
   <meta name="keywords" content="BeatBar, macOS timing tools, tap tempo, BPM to ms, BPM to Hz, note frequency, tuning, transpose, speed ratio, FM calculator, LFO rates, harmonic series, SwiftUI" />
@@ -83,33 +83,143 @@
     </div>
   </header>
 
-  <main class="container" style="padding:40px 0">
-    <picture>
-      <source srcset="../../assets/images/Beat Bar-macOS-Dark-1024x1024@1x.png" data-theme="dark">
-      <img src="../../assets/images/Beat Bar-macOS-Default-1024x1024@1x.png" alt="BeatBar macOS app icon" width="128" height="128" style="margin-bottom: 20px;" />
-    </picture>
+  <main class="container product-page">
+    <div class="product-hero">
+      <div class="product-hero__copy">
+        <picture>
+          <source srcset="../../assets/images/Beat Bar-macOS-Dark-1024x1024@1x.png" data-theme="dark">
+          <img src="../../assets/images/Beat Bar-macOS-Default-1024x1024@1x.png" alt="BeatBar macOS app icon" width="128" height="128" class="product-hero__icon" />
+        </picture>
 
-    <h1>BeatBar for macOS: Desktop Timing Lab &amp; Calculators</h1>
-    <p>BeatBar is a desktop timing lab for fast, accurate conversions: tap tempo, BPM→ms/Hz tables, note↔frequency lookups, transpose/speed helpers, FM + LFO calculators, and a harmonic series explorer.</p>
+        <h1>BeatBar for macOS</h1>
+        <p class="product-lead">A desktop timing lab for fast, accurate conversions with tap tempo, BPM tables, frequency lookups, and synthesis calculators.</p>
 
-    <h2>Features</h2>
-    <ul>
-      <li><strong>Tap Tempo:</strong> instant and averaged BPM from taps, with optional shared BPM binding across tabs</li>
-      <li><strong>BPM → ms / Hz:</strong> straight/dotted/triplet values from whole to 16th notes, shown as ms + repetition rate</li>
-      <li><strong>Note ↔ Frequency:</strong> per-octave table with MIDI number, Hz, period (ms), and samples at 44.1/48k; tuning is configurable</li>
-      <li><strong>Transpose / Speed:</strong> key transpose + cents + speed slider expressed in semitones; outputs interval name, resulting BPM, and ratio</li>
-      <li><strong>FM Calculator:</strong> ratio mode + pitch-correction mode, with sidebands and harmonicity hints</li>
-      <li><strong>LFO Rates:</strong> tempo divisions to Hz/period/samples (48k), plus reverse lookup from custom Hz</li>
-      <li><strong>Harmonic Series:</strong> first 32 harmonics with nearest note, cents offset, and interval labels</li>
-    </ul>
+        <ul class="product-highlights">
+          <li>Tap Tempo with shared BPM binding</li>
+          <li>BPM→ms/Hz tables (straight/dotted/triplet)</li>
+          <li>Note↔Frequency with tuning control</li>
+          <li>FM Calculator + LFO Rates + Harmonic Series</li>
+        </ul>
 
-    <p>BeatBar is built with SwiftUI and CoreMIDI, with reusable logic shared across the BeatBar Suite via modular Swift packages.</p>
+        <div class="product-cta">
+          <a href="https://apps.apple.com/" aria-label="View BeatBar on the Mac App Store">
+            <img src="../../assets/images/Download-on-the-Mac-App-Store/US/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg" data-theme-src-light="../../assets/images/Download-on-the-Mac-App-Store/US/Download_on_Mac_App_Store/White_lockup/SVG/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_wht_092917.svg" data-theme-src-dark="../../assets/images/Download-on-the-Mac-App-Store/US/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the Mac App Store" width="180" height="53">
+          </a>
+        </div>
+      </div>
 
-    <p>
-      <a href="https://apps.apple.com/" aria-label="View BeatBar on the Mac App Store">
-        <img src="../../assets/images/Download-on-the-Mac-App-Store/US/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg" data-theme-src-light="../../assets/images/Download-on-the-Mac-App-Store/US/Download_on_Mac_App_Store/White_lockup/SVG/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_wht_092917.svg" data-theme-src-dark="../../assets/images/Download-on-the-Mac-App-Store/US/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the Mac App Store" width="180" height="53">
-      </a>
-    </p>
+      <div class="product-hero__shots" aria-label="BeatBar macOS screenshots">
+        <h2 class="product-shot-title">Screenshots</h2>
+        <p class="product-shot-lead">Includes light and dark screenshots that follow the website theme.</p>
+        <div class="screenshot-grid">
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="macOS screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatBar/en-US/beatbar-tap-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatBar/en-US/beatbar-tap-mac-light.png" alt="Tap Tempo screen on macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Tap Tempo with instant and averaged BPM.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="macOS screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatBar/en-US/beatbar-bpm-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatBar/en-US/beatbar-bpm-mac-light.png" alt="BPM to ms/Hz table on macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>BPM→ms/Hz table with straight, dotted, and triplet divisions.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="macOS screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatBar/en-US/beatbar-noteHz-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatBar/en-US/beatbar-noteHz-mac-light.png" alt="Note to Frequency converter on macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Note↔Frequency lookup with MIDI numbers and sample periods.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="macOS screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatBar/en-US/beatbar-transpose-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatBar/en-US/beatbar-transpose-mac-light.png" alt="Transpose and Speed helper on macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Transpose/Speed helper with interval names and ratio output.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="macOS screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatBar/en-US/beatbar-fmCalc-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatBar/en-US/beatbar-fmCalc-mac-light.png" alt="FM Calculator on macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>FM Calculator with ratio and pitch-correction modes.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="macOS screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatBar/en-US/beatbar-lfoRate-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatBar/en-US/beatbar-lfoRate-mac-light.png" alt="LFO Rate calculator on macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>LFO Rates with tempo divisions and reverse lookup.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="macOS screenshot">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatBar/en-US/beatbar-harmonics-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatBar/en-US/beatbar-harmonics-mac-light.png" alt="Harmonic Series explorer on macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Harmonic Series explorer with 32 harmonics and interval labels.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <section class="product-section" aria-labelledby="features-title">
+      <h2 id="features-title">Features</h2>
+      <p>BeatBar is a desktop timing lab for fast, accurate conversions: tap tempo, BPM→ms/Hz tables, note↔frequency lookups, transpose/speed helpers, FM + LFO calculators, and a harmonic series explorer.</p>
+      <ul>
+        <li><strong>Tap Tempo:</strong> instant and averaged BPM from taps, with optional shared BPM binding across tabs</li>
+        <li><strong>BPM → ms / Hz:</strong> straight/dotted/triplet values from whole to 16th notes, shown as ms + repetition rate</li>
+        <li><strong>Note ↔ Frequency:</strong> per-octave table with MIDI number, Hz, period (ms), and samples at 44.1/48k; tuning is configurable</li>
+        <li><strong>Transpose / Speed:</strong> key transpose + cents + speed slider expressed in semitones; outputs interval name, resulting BPM, and ratio</li>
+        <li><strong>FM Calculator:</strong> ratio mode + pitch-correction mode, with sidebands and harmonicity hints</li>
+        <li><strong>LFO Rates:</strong> tempo divisions to Hz/period/samples (48k), plus reverse lookup from custom Hz</li>
+        <li><strong>Harmonic Series:</strong> first 32 harmonics with nearest note, cents offset, and interval labels</li>
+      </ul>
+      <p>BeatBar is built with SwiftUI and CoreMIDI, with reusable logic shared across the BeatBar Suite via modular Swift packages.</p>
+    </section>
   </main>
 
   <footer class="site-footer"><div class="container footer-inner"><small>© <span id="year"></span> GITC</small></div></footer>

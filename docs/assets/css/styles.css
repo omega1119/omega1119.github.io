@@ -419,6 +419,7 @@ img { max-width: 100%; height: auto; display: block }
   padding: 40px 0;
   /* Screenshot sizing knob: 0% = default. Increase to shrink screen; decrease to grow. */
   --device-screen-scale: -3.2%;
+  --mac-screen-scale: 9%;
 }
 
 .product-hero {
@@ -547,6 +548,15 @@ img { max-width: 100%; height: auto; display: block }
   bottom: calc(var(--screen-inset-y) + var(--device-screen-scale));
   left: calc(var(--screen-inset-x) + var(--device-screen-scale));
   right: calc(var(--screen-inset-x) + var(--device-screen-scale));
+}
+
+.device-shot--mac .device-shot__screen {
+  --screen-inset-y: 6.5%;
+  --screen-inset-x: 10%;
+  top: calc(var(--screen-inset-y) + var(--mac-screen-scale));
+  bottom: calc(var(--screen-inset-y) + var(--mac-screen-scale));
+  left: calc(var(--screen-inset-x) + var(--mac-screen-scale));
+  right: calc(var(--screen-inset-x) + var(--mac-screen-scale));
 }
 
 @media (min-width: 900px) {
