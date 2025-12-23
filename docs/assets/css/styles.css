@@ -265,6 +265,7 @@ img { max-width: 100%; height: auto; display: block }
   background: var(--card); 
   border: 1px solid var(--border);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .product-card:hover { 
   transform: translateY(-4px);

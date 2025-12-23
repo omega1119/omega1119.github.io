@@ -222,6 +222,22 @@
   // Initialize cookie consent
   initCookieConsent();
 
+  // Make product cards clickable
+  document.querySelectorAll('.product-card').forEach((card) => {
+    const learnMoreLink = card.querySelector('.btn-tertiary');
+    if (!learnMoreLink) return;
+
+    card.style.cursor = 'pointer';
+
+    card.addEventListener('click', (e) => {
+      // Don't navigate if clicking on a link or button
+      if (e.target.closest('a') || e.target.closest('button')) {
+        return;
+      }
+      window.location.href = learnMoreLink.getAttribute('href');
+    });
+  });
+
   // Optional email obfuscation helper (kept from last commit)
   document.querySelectorAll('[data-email]').forEach((a) => {
     a.addEventListener('click', (e) => {
