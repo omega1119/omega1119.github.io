@@ -17,7 +17,7 @@
   </script>
 
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width" />
   <title>BeatLab na macOS — Pracownia teorii muzyki | GITC</title>
   <meta name="description" content="BeatLab to pracownia teorii na macOS: wykrywanie akordów/skal, generowanie harmonii diatonicznej, wspólne nuty/akordy, pivoty modalne i akordy zapożyczone oraz interaktywne koła kwint/tercji." />
   <meta name="keywords" content="BeatLab, macOS, teoria muzyki, wykrywanie akordów, wykrywanie skal, harmonia diatoniczna, pivoty modalne, akordy zapożyczone, koło kwint, koło tercji, CoreMIDI, SwiftUI" />
@@ -49,32 +49,170 @@
     </div>
   </header>
 
-  <main class="container" style="padding:40px 0">
-    <picture>
-      <source srcset="../../assets/images/Beat Lab-macOS-Dark-1024x1024@1x.png" data-theme="dark">
-      <img src="../../assets/images/Beat Lab-macOS-Default-1024x1024@1x.png" alt="Ikona aplikacji BeatLab (macOS)" width="128" height="128" style="margin-bottom: 20px;" />
-    </picture>
+  <main class="container product-page">
+    <div class="product-hero">
+      <div class="product-hero__copy">
+        <picture>
+          <source srcset="../../assets/images/Beat Lab-macOS-Dark-1024x1024@1x.png" data-theme="dark">
+          <img src="../../assets/images/Beat Lab-macOS-Default-1024x1024@1x.png" alt="Ikona aplikacji BeatLab (macOS)" width="128" height="128" class="product-hero__icon" />
+        </picture>
 
-    <h1>BeatLab na macOS</h1>
-    <p>BeatLab to pełna pracownia teorii do wykrywania akordów i skal, generowania harmonii diatonicznej, porównywania wspólnych nut/akordów oraz testowania modulacji w interaktywnych kołach.</p>
+        <h1>BeatLab na macOS</h1>
+        <p class="product-lead">Pracownia teorii muzyki do wykrywania akordów/skal, generowania harmonii diatonicznej i interaktywnej eksploracji modulacji.</p>
 
-    <h2>Funkcje</h2>
-    <ul>
-      <li><strong>Narzędzia:</strong> Wyszukiwarka Skali/Akordu, Nuty w tonacji, Akordy skali, Wspólne nuty, Wspólne akordy, Pivoty modalne, Akordy zapożyczone, Koło kwint, Koło tercji</li>
-      <li><strong>Wyszukiwarka Skali + Akordu:</strong> wejście z MIDI i klawiatury ekranowej, wykrywanie akordu (lub interwału dla dwóch dźwięków) oraz ranking skal wg pokrycia</li>
-      <li><strong>Nuty w tonacji:</strong> poprawnie zapisana lista dźwięków skali i podświetlenie nut „w tonacji” na klawiaturze</li>
-      <li><strong>Akordy skali:</strong> triady lub septymy dla każdego stopnia, z kontrolą przewrotu/rozszerzeń i wizualizacją na klawiaturze</li>
-      <li><strong>Wspólne nuty / Wspólne akordy:</strong> porównanie dwóch tonacji/skal i wizualizacja części wspólnej oraz różnic</li>
-      <li><strong>Pivoty modalne:</strong> wyszukiwanie innych trybów/tonacji, które zawierają wybrany akord (z opcjonalnym filtrowaniem kategorii)</li>
-      <li><strong>Akordy zapożyczone:</strong> propozycje zapożyczeń z trybów równoległych, grupowane wg źródłowego trybu (triada/septyma)</li>
-      <li><strong>Koła:</strong> interaktywne Koło kwint i Koło tercji (medianty chromatyczne) do eksploracji modulacji</li>
-    </ul>
+        <ul class="product-highlights">
+          <li>Wyszukiwarka Skali/Akordu z MIDI + klawiaturą</li>
+          <li>Nuty w tonacji, Akordy skali, Wspólne nuty/akordy</li>
+          <li>Pivoty modalne + Akordy zapożyczone</li>
+          <li>Interaktywne Koło kwint + Koło tercji</li>
+        </ul>
 
-    <p>
-      <a href="https://apps.apple.com/" aria-label="Zobacz BeatLab w Mac App Store">
-        <img src="../../assets/images/Download-on-the-Mac-App-Store/PL/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_PL_RGB_blk_100317.svg" data-theme-src-light="../../assets/images/Download-on-the-Mac-App-Store/PL/Download_on_Mac_App_Store/White_lockup/SVG/Download_on_the_Mac_App_Store_Badge_PL_RGB_wht_100317.svg" data-theme-src-dark="../../assets/images/Download-on-the-Mac-App-Store/PL/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_PL_RGB_blk_100317.svg" alt="Pobierz w Mac App Store" width="180" height="53">
-      </a>
-    </p>
+        <div class="product-cta">
+          <a href="https://apps.apple.com/" aria-label="Zobacz BeatLab w Mac App Store">
+            <img src="../../assets/images/Download-on-the-Mac-App-Store/PL/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_PL_RGB_blk_100317.svg" data-theme-src-light="../../assets/images/Download-on-the-Mac-App-Store/PL/Download_on_Mac_App_Store/White_lockup/SVG/Download_on_the_Mac_App_Store_Badge_PL_RGB_wht_100317.svg" data-theme-src-dark="../../assets/images/Download-on-the-Mac-App-Store/PL/Download_on_Mac_App_Store/Black_lockup/SVG/Download_on_the_Mac_App_Store_Badge_PL_RGB_blk_100317.svg" alt="Pobierz w Mac App Store" width="180" height="53">
+          </a>
+        </div>
+      </div>
+
+      <div class="product-hero__shots" aria-label="Zrzuty ekranu BeatLab macOS">
+        <h2 class="product-shot-title">Zrzuty ekranu</h2>
+        <p class="product-shot-lead">Zawiera jasne i ciemne zrzuty ekranu, które dostosowują się do motywu witryny.</p>
+        <div class="screenshot-grid">
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="Zrzut ekranu macOS">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLab/pl/beatlab-scaleChord-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLab/pl/beatlab-scaleChord-mac-light.png" alt="Wyszukiwarka Skali/Akordu na macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Wyszukiwarka Skali/Akordu z MIDI i klawiaturą ekranową.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="Zrzut ekranu macOS">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLab/pl/beatlab-keyNotes-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLab/pl/beatlab-keyNotes-mac-light.png" alt="Nuty w tonacji na macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Nuty w tonacji z zapisanymi dźwiękami i podświetleniem klawiatury.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="Zrzut ekranu macOS">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLab/pl/beatlab-scaleChords-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLab/pl/beatlab-scaleChords-mac-light.png" alt="Akordy skali na macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Akordy skali z diatonicznymi triadami/septymami i ustawieniem.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="Zrzut ekranu macOS">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLab/pl/beatlab-sharedNotes-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLab/pl/beatlab-sharedNotes-mac-light.png" alt="Wspólne nuty na macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Wspólne nuty porównujące dwie tonacje z wizualizacją nakładania się.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="Zrzut ekranu macOS">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLab/pl/beatlab-sharedChords-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLab/pl/beatlab-sharedChords-mac-light.png" alt="Wspólne akordy na macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Wspólne akordy do porównywania akordów diatonicznych między tonacjami.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="Zrzut ekranu macOS">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLab/pl/beatlab-modePivots-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLab/pl/beatlab-modePivots-mac-light.png" alt="Pivoty modalne na macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Pivoty modalne pokazujące akordy pivotowe w tonacjach.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="Zrzut ekranu macOS">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLab/pl/beatlab-borrowedChords-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLab/pl/beatlab-borrowedChords-mac-light.png" alt="Akordy zapożyczone na macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Akordy zapożyczone z trybów równoległych.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="Zrzut ekranu macOS">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLab/pl/beatlab-circleOfFifths-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLab/pl/beatlab-circleOfFifths-mac-light.png" alt="Koło kwint na macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Interaktywne Koło kwint do eksploracji modulacji.</figcaption>
+          </figure>
+
+          <figure class="device-shot device-shot--mac">
+            <div class="device-shot__stage" aria-label="Zrzut ekranu macOS">
+              <img class="device-shot__bezel" src="../../assets/images/Bezels/MacBook Air 13&quot; - 4th Gen - Midnight.png" alt="" loading="lazy" />
+              <div class="device-shot__screen">
+                <picture>
+                  <source srcset="../../assets/images/BeatLab/pl/beatlab-circleOfThirds-mac-dark.png" data-theme="dark">
+                  <img src="../../assets/images/BeatLab/pl/beatlab-circleOfThirds-mac-light.png" alt="Koło tercji na macOS" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+            <figcaption>Koło tercji do eksploracji mediant chromatycznych.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <section class="product-section" aria-labelledby="features-title">
+      <h2 id="features-title">Funkcje</h2>
+      <p>BeatLab to pełna pracownia teorii do wykrywania akordów i skal, generowania harmonii diatonicznej, eksploracji wspólnych nut/akordów oraz testowania idei modulacji za pomocą interaktywnych kół.</p>
+      <ul>
+        <li><strong>Wyszukiwarka Skali/Akordu:</strong> wejście z MIDI i klawiatury ekranowej, wykrywanie akordu (lub interwału dla dwóch dźwięków) oraz ranking skal według pokrycia</li>
+        <li><strong>Nuty w tonacji:</strong> poprawnie zapisana lista dźwięków skali i podświetlenie nut „w tonacji" na klawiaturze</li>
+        <li><strong>Akordy skali:</strong> triady/septymy diatoniczne dla każdego stopnia z kontrolą przewrotu/rozszerzeń i ustawieniem na klawiaturze</li>
+        <li><strong>Wspólne nuty:</strong> porównanie dwóch tonacji/skal i wizualizacja nakładania się oraz odrębnych dźwięków</li>
+        <li><strong>Wspólne akordy:</strong> porównanie akordów diatonicznych między dwiema tonacjami/skalami</li>
+        <li><strong>Pivoty modalne:</strong> wyszukiwanie innych trybów/tonacji, które zawierają wybrany akord (z opcjonalnym filtrowaniem kategorii)</li>
+        <li><strong>Akordy zapożyczone:</strong> opcje zapożyczeń z trybów równoległych, grupowane według trybu źródłowego (rozpoznawanie triad/septym)</li>
+        <li><strong>Koło kwint:</strong> interaktywne koło do eksploracji relacji między tonacjami i modulacji</li>
+        <li><strong>Koło tercji:</strong> medianty chromatyczne dla alternatywnych ścieżek modulacji</li>
+      </ul>
+    </section>
   </main>
 
   <footer class="site-footer"><div class="container footer-inner"><small>© <span id="year"></span> GITC</small></div></footer>
