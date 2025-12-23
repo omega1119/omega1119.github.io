@@ -6,8 +6,13 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    
+    // Set default consent to denied
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied'
+    });
+    
     gtag('js', new Date());
-
     gtag('config', 'G-1Y1NGET5SY');
   </script>
 
@@ -53,8 +58,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="stylesheet" href="../assets/css/styles.css" />
-  <script defer src="../assets/js/main.js"></script>
+  <link rel="stylesheet" href="../assets/css/styles.css?v=17" />
+  <script defer src="../assets/js/main.js?v=8"></script>
 
   <!-- Language alternates for SEO -->
   <link rel="alternate" hreflang="en" href="https://gitc.digital/en/" />
@@ -325,5 +330,18 @@
       </ul>
     </div>
   </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-consent">
+    <div class="cookie-consent__content">
+      <div class="cookie-consent__text">
+        We use cookies to analyze site traffic and improve your experience. By clicking "Accept", you consent to our use of cookies. <a href="./privacy.html">Privacy Policy</a>
+      </div>
+      <div class="cookie-consent__buttons">
+        <button class="cookie-consent__btn cookie-consent__btn--accept">Accept</button>
+        <button class="cookie-consent__btn cookie-consent__btn--deny">Deny</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

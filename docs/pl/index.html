@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="pl" dir="ltr">
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y1NGET5SY"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		
+		// Set default consent to denied
+		gtag('consent', 'default', {
+			'analytics_storage': 'denied'
+		});
+		
+		gtag('js', new Date());
+		gtag('config', 'G-1Y1NGET5SY');
+	</script>
+
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -40,8 +55,8 @@
 	<meta name="twitter:image:alt" content="GITC - Aplikacje muzyczne" />
 
 	<link rel="icon" type="image/svg+xml" href="../favicon.svg">
-	<link rel="stylesheet" href="../assets/css/styles.css" />
-	<script defer src="../assets/js/main.js"></script>
+	<link rel="stylesheet" href="../assets/css/styles.css?v=17" />
+	<script defer src="../assets/js/main.js?v=8"></script>
 
 	<!-- Hreflang alternates -->
 	<link rel="alternate" hreflang="en" href="https://gitc.digital/en/" />
@@ -310,5 +325,18 @@
 			</ul>
 		</div>
 	</footer>
+
+	<!-- Cookie Consent Banner -->
+	<div class="cookie-consent">
+		<div class="cookie-consent__content">
+			<div class="cookie-consent__text">
+				Używamy plików cookie do analizy ruchu w witrynie i poprawy Twojego doświadczenia. Klikając "Akceptuj", wyrażasz zgodę na używanie plików cookie. <a href="./privacy.html">Polityka prywatności</a>
+			</div>
+			<div class="cookie-consent__buttons">
+				<button class="cookie-consent__btn cookie-consent__btn--accept">Akceptuj</button>
+				<button class="cookie-consent__btn cookie-consent__btn--deny">Odmów</button>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

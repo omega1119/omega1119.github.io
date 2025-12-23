@@ -169,6 +169,59 @@
     initScreenshotModal();
   }
 
+  // Cookie Consent
+  function initCookieConsent() {
+    const consentBanner = document.querySelector('.cookie-consent');
+    if (!consentBanner) return;
+
+    const acceptBtn = consentBanner.querySelector('.cookie-consent__btn--accept');
+    const denyBtn = consentBanner.querySelector('.cookie-consent__btn--deny');
+
+    // Check if user has already made a choice
+    const consent = localStorage.getItem('cookieConsent');
+    
+    if (!consent) {
+      // Show banner if no choice has been made
+      consentBanner.classList.add('show');
+    } else if (consent === 'accepted') {
+      // Enable analytics if previously accepted
+      enableAnalytics();
+    }
+
+    acceptBtn?.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'accepted');
+      consentBanner.classList.remove('show');
+      enableAnalytics();
+    });
+
+    denyBtn?.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'denied');
+      consentBanner.classList.remove('show');
+      disableAnalytics();
+    });
+  }
+
+  function enableAnalytics() {
+    // Grant consent for Google Analytics
+    if (typeof gtag !== 'undefined') {
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+      });
+    }
+  }
+
+  function disableAnalytics() {
+    // Deny consent for Google Analytics
+    if (typeof gtag !== 'undefined') {
+      gtag('consent', 'update', {
+        'analytics_storage': 'denied'
+      });
+    }
+  }
+
+  // Initialize cookie consent
+  initCookieConsent();
+
   // Optional email obfuscation helper (kept from last commit)
   document.querySelectorAll('[data-email]').forEach((a) => {
     a.addEventListener('click', (e) => {
