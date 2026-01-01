@@ -250,6 +250,53 @@ img { max-width: 100%; height: auto; display: block }
   letter-spacing: -1px;
   text-align: center;
 }
+
+.platform-group + .platform-group {
+  margin-top: 80px;
+}
+
+.platform-group__title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.platform-hero {
+  margin-top: 28px;
+  --device-screen-scale: -3.2%;
+  --mac-screen-scale: 9%;
+}
+
+.platform-hero__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.platform-hero__link .device-shot {
+  cursor: pointer;
+}
+
+.platform-hero__link:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 6px;
+}
+
+.platform-group .product-grid {
+  margin-top: 32px;
+}
+
+.product-grid--two {
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+}
+
+@media (max-width: 700px) {
+  .product-grid--two {
+    grid-template-columns: 1fr;
+  }
+}
+
 .product-grid { 
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
