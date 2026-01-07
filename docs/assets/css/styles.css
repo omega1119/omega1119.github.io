@@ -1,5 +1,5 @@
 :root {
-  --accent: #8B5CF6;
+  --accent: #43B02A;
   --text: #0a0a0a;
   --muted: #666;
   --bg: #ffffff;
@@ -213,16 +213,15 @@ main {
   font-weight: 600;
   font-size: 15px;
   transition: all 0.2s ease;
-  border: 2px solid transparent;
 }
 .btn-primary { 
   background: var(--accent); 
   color: white;
-  border-color: var(--accent);
+  border: 2px solid var(--accent);
 }
 .btn-primary:hover { 
-  background: transparent;
-  color: var(--accent);
+  background: #3a9a24;
+  border-color: #3a9a24;
 }
 .btn-secondary { 
   border: 2px solid var(--border); 
