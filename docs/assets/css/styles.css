@@ -303,6 +303,38 @@ main {
   text-align: center;
 }
 
+/* Expertise Section */
+.expertise {
+  padding: 80px 0;
+}
+.expertise h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  margin-bottom: 48px;
+  text-align: center;
+}
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.expertise-item {
+  text-align: center;
+}
+.expertise-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+.expertise-item p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
 /* Contact Section */
 .contact {
   padding: 80px 0;
