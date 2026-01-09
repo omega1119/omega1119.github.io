@@ -323,6 +323,16 @@ main {
 .expertise-item {
   text-align: center;
 }
+.expertise-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 14px;
+  opacity: 0.9;
+}
+
+[data-theme="dark"] .expertise-icon {
+  filter: invert(1) brightness(1.1);
+}
 .expertise-item h3 {
   font-size: 18px;
   font-weight: 700;
