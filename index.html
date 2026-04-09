@@ -4,20 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Redirecting…</title>
-  <meta http-equiv="refresh" content="0; url=/docs/" />
-  <link rel="canonical" href="/docs/" />
+  <link rel="canonical" href="https://gitc.digital/en/" />
   <style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:40px;color:#111827}</style>
-  <script>
-    (function(){
-      var target = '/docs/';
-      if (location.pathname !== '/' && !location.pathname.endsWith('/')) {
-        target = location.pathname.replace(/[^\/]+$/, '') + 'docs/';
-      }
-      window.location.replace(target);
-    })();
-  </script>
+  <script defer src="assets/js/redirect.js" data-redirect-en="en/" data-default-lang="en" data-country-timeout-ms="2500"></script>
 </head>
 <body>
-  <p>Redirecting to <a href="/docs/">/docs/</a>…</p>
+  <p>Redirecting…</p>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=en/" />
+    <p>JavaScript is required for language detection. Continue to <a href="en/">English</a>.</p>
+  </noscript>
 </body>
 </html>
