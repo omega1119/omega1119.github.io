@@ -27,11 +27,11 @@ omega1119.github.io/
 
 ## Sections
 
-- **Hero** — Company intro and tagline
-- **Our Brands** — Harmonic Tools and Nullform Audio
-- **About Us** — Company background and philosophy
-- **Core Expertise** — Technical capabilities (Azure, M365, AI, Apple, DSP, Full-Stack)
-- **Contact** — Email and GitHub links
+- **Hero**: Company intro and tagline
+- **Our Brands**: Harmonic Tools and Nullform Audio
+- **About Us**: Company background and philosophy
+- **Core Expertise**: Technical capabilities (Azure, M365, AI, Apple, DSP, Full-Stack)
+- **Contact**: Email and GitHub links
 
 ## Localization
 
@@ -58,5 +58,5 @@ The site is deployed via GitHub Pages from the `docs/` folder on the `main` bran
 
 ## Related Repositories
 
-- [harmonic-tools](https://github.com/omega1119/harmonic-tools) — harmonic.tools website
-- [nullform-audio](https://github.com/omega1119/nullform-audio) — nullform.audio website
+- [harmonic-tools](https://github.com/omega1119/harmonic-tools): harmonic.tools website
+- [nullform-audio](https://github.com/omega1119/nullform-audio): nullform.audio website
