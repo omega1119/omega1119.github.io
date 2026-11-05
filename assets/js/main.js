@@ -114,8 +114,8 @@
     banner.innerHTML =
       '<div class="cookie-consent__content">' +
         '<div class="cookie-consent__text">' +
-          'We use cookies to analyze site traffic and improve your experience. By clicking \u201cAccept\u201d, you consent to our use of cookies. ' +
-          '<a href="' + privacyHref + '">Privacy Policy</a>' +
+          'We use cookies to analyse site traffic. By clicking "Accept", you consent to our use of cookies. ' +
+          '<a href="' + privacyHref + '">Privacy policy</a>' +
         '</div>' +
         '<div class="cookie-consent__buttons">' +
           '<button class="cookie-consent__btn cookie-consent__btn--accept">Accept</button>' +
